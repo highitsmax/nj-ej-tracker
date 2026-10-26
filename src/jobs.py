@@ -165,7 +165,7 @@ def fetch_jobspy():
         print(f'jobs: JobSpy not importable ({e}); skipping (guarded, never fails the stream). '
               f'See BUILD_REPORT for the sandbox-specific pip install note.')
         return []
-    terms = ['environmental justice', 'climate communications', 'environmental communications']
+    terms = ['environmental justice', 'environmental justice communications', 'environmental health communications', 'community organizer environmental']
     locations = ['New Jersey', 'Baltimore, MD', 'Washington, DC']
     rows = []
     for term in terms:
@@ -204,13 +204,41 @@ def _jobspy_rows(df):
             'tags': ['jobspy'],
             'state': 'US',
             'kind': 'job',
-            '_org': company, '_title': title,
+            '_org': company, '_title': title, '_desc': str(r.get('description') or '')[:6000],
         })
     return out
 
 
 import re as _re
 IN_REGION = _re.compile(r"(New Jersey|\bNJ\b|New York|\bNY\b|Pennsylvania|\bPA\b|Philadelphia|Delaware|\bDE\b|Maryland|\bMD\b|Baltimore|Washington,? DC|\bD\.?C\.?\b|District of Columbia|Remote|Anywhere|Mid-Atlantic|Northeast)", _re.I)
+
+
+# Mission rule (2026-10-26): communications in the title is not enough -- the work has to be EJ or
+# environmental-health work. Energy/clean-tech roles only count when an EJ angle is explicit.
+STRONG = _re.compile(r"(environmental justice|climate justice|environmental racism|frontline communit|fenceline|overburdened|disadvantaged communit|environmental health|community health|grassroots|community[- ]led|pollution|clean air|clean water|toxic|cumulative impact)", _re.I)
+MEDIUM = _re.compile(r"(environment|climate|conservation|public health|\\bwater\\b)", _re.I)
+ENERGY = _re.compile(r"(solar|renewable|clean energy|energy efficiency|electric vehicle|\bEV\b|utility|utilities|power plant|wind energy|battery|decarboni|carbon accounting|emissions software)", _re.I)
+# Employer rule (Max 2026-10-26: "she wants to be on the side of the good guys"): no consultancies, engineering
+# firms, or industry/corporate employers -- the side that hires to get permits through, not to fight them.
+NOT_GOOD_GUYS = _re.compile(r"(consult|engineer|\bEY\b|deloitte|accenture|kpmg|pwc|JLL|CBRE|jacobs|AECOM|WSP|stantec|tetra tech|geosyntec|TRC compan|ramboll|arcadis|plastics|chemical|petroleum|\boil\b|\bgas\b|exxon|chevron|shell|BP\b|refin|pharma|merck|pfizer|johnson & johnson|amazon|google|meta\b|microsoft|coreweave|staffing|recruit|marketing agency|proposals|industry advocacy|private sector engagement|corporate communications)", _re.I)
+TRUSTED_ATS = {'jobs-ats'}
+# Known advocacy / EJ / environmental-health nonprofits: any communications/organizing role there counts.
+GOOD_GUYS = _re.compile(r"(earthjustice|sierra club|clean water action|natural resources defense|\\bNRDC\\b|WE ACT|environmental justice|ironbound|NJ Environmental Justice|NJEJA|union of concerned scientists|evergreen action|groundwork|hip hop caucus|greenpeace|350\\.org|sunrise movement|center for biological diversity|environmental defense|\\bEDF\\b|league of conservation voters|\\bLCV\\b|food & water watch|food and water watch|moms clean air|appalachian voices|south baltimore|clean air council|new jersey future|isles|tri-state transportation|surfrider|waterkeeper|riverkeeper|baykeeper|green ?faith|NAACP|urban league|environmental integrity project|community health|public citizen)", _re.I)   # rows from the hand-picked EJ/environmental org boards
+
+
+def mission_ok(r):
+    head = f"{r.get('_title', '')} {r.get('_org', '')}"
+    full = f"{head} {r.get('_desc', '')}"
+    trusted = 'jobspy' not in (r.get('tags') or []) and 'usajobs' not in (r.get('tags') or [])
+    if ENERGY.search(full) and not STRONG.search(full):
+        return False
+    if GOOD_GUYS.search(r.get('_org', '')):
+        return not (ENERGY.search(full) and not STRONG.search(full))
+    if NOT_GOOD_GUYS.search(r.get('_org', '')) or NOT_GOOD_GUYS.search(r.get('_title', '')):
+        return False
+    if trusted:
+        return True
+    return bool(STRONG.search(full) or MEDIUM.search(head))
 
 
 def run():
@@ -224,9 +252,11 @@ def run():
         if key in seen:
             continue
         seen.add(key)
+        if not mission_ok(r):
+            continue   # not EJ/environmental-health mission, or energy-only work with no EJ angle
         if not IN_REGION.search(f"{r.get('title', '')} {r.get('source', '')}"):
             continue   # outside the tracked region and not remote
-        r.pop('_org', None); r.pop('_title', None); r.pop('_dept', None)
+        r.pop('_org', None); r.pop('_title', None); r.pop('_dept', None); r.pop('_desc', None)
         filtered.append(r)
     print(f'jobs: {len(filtered)} posting(s) pass the comms/EJ job filter (of {len(raw)} raw, before the {MAX_JOBS}-row cap)')
     return filtered[:MAX_JOBS]
