@@ -44,14 +44,6 @@ jobs:
       - name: Build the page (unencrypted, local only)
         run: python3 src/build_page.py
 
-      - name: Commit data back to the repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "auto: refresh tracker data [skip ci]"
-          git push
-
       - name: Set up Node (StatiCrypt only)
         uses: actions/setup-node@v4
         with:
@@ -80,3 +72,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Save data back to the repo (after deploy; never blocks the page)
+        if: always()
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "no data changes"; exit 0; fi
+          git commit -m "auto: refresh tracker data [skip ci]"
+          git pull --rebase -X theirs origin main || git pull --rebase origin main
+          git push origin HEAD:main
