@@ -30,3 +30,6 @@ https://www.insidernj.com/feed/ | InsiderNJ  # state:NJ
 https://news.google.com/news/rss/search?q=%22environmental+justice%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: EJ New Jersey  # state:NJ
 https://news.google.com/news/rss/search?q=%22overburdened+community%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: overburdened community NJ  # state:NJ
 https://news.google.com/news/rss/search?q=%22cumulative+impacts%22+NJDEP&hl=en-US&gl=US&ceid=US:en | GN: cumulative impacts NJDEP  # state:NJ
+https://news.google.com/news/rss/search?q=%22environmental+justice%22&hl=en-US&gl=US&ceid=US:en | GN: environmental justice (national)
+https://news.google.com/news/rss/search?q=%22environmental+racism%22&hl=en-US&gl=US&ceid=US:en | GN: environmental racism (national)
+https://news.google.com/news/rss/search?q=%22cumulative+impacts%22+law&hl=en-US&gl=US&ceid=US:en | GN: cumulative impacts law (national)

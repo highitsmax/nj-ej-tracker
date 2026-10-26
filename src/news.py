@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import EJMatcher, curl, load_rules, parse_feed, row_id, run_stream, split_outlet, today  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+NJ_RX = re.compile(r"(New Jersey|N\\.J\\.|\\bNJ\\b|NJDEP|Newark|Camden|Paterson|Trenton|Jersey City|Ironbound|Elizabeth, N|Linden|Perth Amboy|Bayonne|Hackensack|Meadowlands|Garden State)")
 FEED_STATE = {}  # label -> state code, from a feed line's trailing "# state:XX" (see feeds.txt header)
 
 
@@ -93,12 +94,25 @@ def run():
                 'source': outlet or r['label'],
                 'deadline': None,
                 'tags': hits,
-                'state': FEED_STATE.get(r['label'], 'US'),
+                'state': 'NJ' if NJ_RX.search(f"{headline} {it.get('summary', '')} {outlet or ''}") else 'US',
             })
     if ok == 0:
         raise RuntimeError(f'all {len(results)} feeds failed; refusing to overwrite data/news.json with an empty set')
     return rows
 
 
+_cache = {}
+
+
+def _rows():
+    if 'rows' not in _cache:
+        _cache['rows'] = run()
+    return _cache['rows']
+
+
 if __name__ == '__main__':
-    sys.exit(run_stream('news', run))
+    # Two panels: NJ (story text names NJ or an NJ place) and national (everything else). Tagged by the story's
+    # own text, not the feed, so a New York City story from an NJ-query feed lands in national.
+    rc1 = run_stream('news_nj', lambda: [r for r in _rows() if r['state'] == 'NJ'])
+    rc2 = run_stream('news_national', lambda: [r for r in _rows() if r['state'] != 'NJ'])
+    sys.exit(rc1 or rc2)

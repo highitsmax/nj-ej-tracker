@@ -15,7 +15,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_DIR = os.path.join(ROOT, 'build')
 
 PANELS = [
-    ('news', 'News', None),
+    ('news_nj', 'New Jersey News', None),
+    ('news_national', 'National News', None),
     ('bills', 'NJ Bills', None),
     ('comments', 'Comment Periods', None),
     ('grants_org', 'Grants -- organizations could apply (501(c)(3))', None),
@@ -103,10 +104,11 @@ header .upd { margin-left: auto; color: #e7cdb8; font-size: 11.5px; }
 .stats span { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: .5px; }
 main { flex: 1; min-height: 0; display: grid; gap: 10px; padding: 10px;
        grid-template-columns: 1.35fr 1fr 1fr; grid-template-rows: 1fr 1fr;
-       grid-template-areas: "news due bills" "news comments grants"; }
+       grid-template-areas: "njnews due bills" "usnews comments grants"; }
 .p { background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--terra);
      display: flex; flex-direction: column; min-height: 0; }
-.p.news { grid-area: news; border-top-color: var(--brown); }
+.p.njnews { grid-area: njnews; border-top-color: var(--brown); }
+.p.usnews { grid-area: usnews; border-top-color: var(--brown); }
 .p.due-panel { grid-area: due; border-top-color: var(--terra-d); }
 .p.bills { grid-area: bills; border-top-color: var(--brown); }
 .p.comments { grid-area: comments; }
@@ -144,7 +146,7 @@ footer { color: var(--muted); font-size: 11px; padding: 4px 18px 8px; }
 def build():
     data = {name: load_panel(name) for name, _, _ in PANELS}
     all_rows = [r for rows, _ in data.values() for r in rows]
-    news, bills, comments = data['news'], data['bills'], data['comments']
+    nj, nat, bills, comments = data['news_nj'], data['news_national'], data['bills'], data['comments']
     go, gi, jobs, fed = data['grants_org'], data['grants_individual'], data['jobs'], data['federal_bills']
 
     def sub(label, rows, st, env=None):
@@ -161,7 +163,7 @@ def build():
     cutoff = (datetime.now(timezone.utc).date() + timedelta(days=30)).isoformat()
     n_due = len({r.get('title') for r in all_rows if r.get('deadline') and today() <= r['deadline'] <= cutoff})
     stats = ''.join(f'<div><b>{n}</b><span>{l}</span></div>' for n, l in [
-        (len(news[0]), 'stories'), (len(bills[0]), 'NJ bills'), (len(comments[0]), 'open comment periods'),
+        (len(nj[0]), 'NJ stories'), (len(nat[0]), 'national stories'), (len(bills[0]), 'NJ bills'), (len(comments[0]), 'open comment periods'),
         (n_due, 'due in 30 days'), (n_opps, 'opportunities')])
 
     doc = f"""<!DOCTYPE html>
@@ -179,7 +181,8 @@ def build():
 <span class="upd">Updated {esc(now()[:16].replace('T', ' '))} UTC · refreshes every 3 hours</span></header>
 <div class="stats">{stats}</div>
 <main>
-{panel_html('news', 'News', None, *news, cls='news')}
+{panel_html('news_nj', 'New Jersey News', None, *nj, cls='njnews')}
+{panel_html('news_national', 'National News', None, *nat, cls='usnews')}
 {top_strip(all_rows)}
 {panel_html('bills', 'NJ Bills', None, *bills, cls='bills')}
 {panel_html('comments', 'Open Comment Periods', None, *comments, cls='comments')}
