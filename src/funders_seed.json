@@ -1,25 +1,280 @@
 {
   "_note": "Hand-kept foundation seed list for the 'Grants -- organizations' sub-section, rebuilt 2026-10-26 from round-2 research (round2/funders_seed.json, 20 foundations). Most dollar ranges are secondary-aggregator sourced, not every one independently re-fetched -- see each entry's 'confidence'. src/grants.py's build_funders() applies the filter mechanically: region_tags must include 'NJ', 'MD', 'DC', or 'national' AND (unsolicited is true OR a recurring_deadlines/deadline/open-rolling cycle is given) -- entries failing that (closed programs, invitation-only, unsolicited:false with no open cycle) are in this seed file for reference but do not appear on the page. That mechanical gate is also why PSEG Foundation, William Penn Foundation, Town Creek Foundation (dissolved), Victoria Foundation, Fund for NJ, Kresge, Surdna, Geraldine R. Dodge, Healthcare Foundation of NJ, CFNJ, Cafritz Foundation, Meyer Foundation (closed for 2026), Chesapeake Bay Trust HEHC (closed program), and OSI-Baltimore (defunct/being redesigned) are all excluded below -- do NOT label the sub-section with any single organization's name regardless of which ones pass the filter.",
   "funders": [
-    {"name": "Nathan Cummings Foundation", "url": "https://nathancummings.org/apply/", "region_tags": ["national"], "typical_range": null, "cycle": "Letters of Inquiry accepted year-round", "unsolicited": true, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM"},
-    {"name": "Chesapeake Bay Trust -- Healthy Environment, Healthy Communities", "url": "https://cbtrust.org/grants/healthy-environment-healthy-communities/", "region_tags": ["MD"], "typical_range": "up to $225,000 (Curtis Bay track) / $1.1M (Patapsco-Back River track) in aggregate; individual requests typically $30,000-$100,000", "cycle": "CLOSED -- last deadline 2024-10-24, fully awarded, not anticipated to reopen", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "HIGH on closure"},
-    {"name": "Chesapeake Bay Trust -- general grants page", "url": "https://cbtrust.org/grants/", "region_tags": ["MD", "DC"], "typical_range": "$9,500 (Community Gardens) to $1,000,000 (PG County Stormwater Stewardship); most community/outreach tracks $10,000-$150,000", "cycle": "Mixed fixed deadlines (Nov 2026-Jan 2027) + 13 rolling-deadline programs", "unsolicited": true, "deadline": null, "recurring_deadlines": [], "confidence": "HIGH -- primary source read directly"},
-    {"name": "CEEJH -- MATCH 2.0 Mini-Grants", "url": "https://ceejh.org/engagement/match-2-0/", "region_tags": ["MD", "DC"], "typical_range": "$10,000 (20 grants) / $20,000 (5 grants), ~$300,000 total pool", "cycle": "Fixed deadline", "unsolicited": true, "deadline": "2026-10-31", "recurring_deadlines": [], "confidence": "MEDIUM -- secondary aggregator figures, primary pages blocked this session"},
-    {"name": "Healthcare Foundation of New Jersey", "url": "https://hfnj.org/", "region_tags": ["NJ"], "typical_range": null, "cycle": "Letter of Inquiry required before full application", "unsolicited": "conditional", "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM"},
-    {"name": "Victoria Foundation", "url": "https://www.victoriafoundation.org/", "region_tags": ["NJ"], "typical_range": "$25,000-$500,000, median ~$45,000", "cycle": "Relationship-based, not a standing open cycle; unsolicited applications paused during a strategic review", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM"},
-    {"name": "Geraldine R. Dodge Foundation", "url": "https://grdodge.org/", "region_tags": ["NJ"], "typical_range": "Reserve Fund $20,000-$25,000; Capacity Building ~$5,000; median ~$25,000", "cycle": "By invitation/RFI per program", "unsolicited": "conditional", "deadline": null, "recurring_deadlines": [], "confidence": "LOW-MEDIUM"},
-    {"name": "Schumann Fund for New Jersey", "url": "https://schumannfund.org/", "region_tags": ["NJ"], "typical_range": "Most grants $25,000-$50,000; median first-year grant ~$18,000", "cycle": "Quarterly deadlines", "unsolicited": true, "deadline": null, "recurring_deadlines": ["01-15", "04-15", "07-15", "10-15"], "confidence": "MEDIUM -- program-area fit (affordable housing/early childhood/youth justice) with environment/EJ NOT confirmed as current priority; re-verify before pursuing"},
-    {"name": "NJ Highlands Coalition -- Small Grants Program", "url": "https://www.njhighlandscoalition.org/", "region_tags": ["NJ"], "typical_range": "Up to $5,000", "cycle": "Not confirmed this session", "unsolicited": true, "deadline": null, "recurring_deadlines": [], "confidence": "LOW -- geography is the NJ Highlands region specifically, which may not cover Essex County/Essex County"},
-    {"name": "Community Foundation of New Jersey -- Sheila Williamson Memorial Health Grant", "url": "https://www.cfnj.org/", "region_tags": ["NJ"], "typical_range": "$2,500-$5,000", "cycle": "Not confirmed this session", "unsolicited": "unknown", "deadline": null, "recurring_deadlines": [], "confidence": "LOW"},
-    {"name": "Fund for New Jersey", "url": "https://fundfornj.org/", "region_tags": ["NJ"], "typical_range": null, "cycle": "Invitation only -- LOIs currently suspended for unsolicited applicants", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM"},
-    {"name": "Kresge Foundation", "url": "https://kresge.org/", "region_tags": ["national"], "typical_range": "Varies widely", "cycle": "Invitation/proactive outreach, not open unsolicited", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM"},
-    {"name": "Surdna Foundation", "url": "https://surdna.org/", "region_tags": ["national"], "typical_range": "Recent grants ~$2,000-$2.9M, most under $1M, average ~$275K", "cycle": "Invitation only -- does not accept unsolicited LOIs by explicit policy", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM-HIGH"},
-    {"name": "Eugene and Agnes E. Meyer Foundation", "url": "https://meyerfoundation.org/", "region_tags": ["DC"], "typical_range": "Rapid Response tiers: $10,000 / $20,000 / $50,000", "cycle": "CLOSED to new applicants for 2026 -- only current grantee partners can renew", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM-HIGH"},
-    {"name": "Morris and Gwendolyn Cafritz Foundation", "url": "https://cafritzfoundation.org/", "region_tags": ["DC", "MD"], "typical_range": null, "cycle": "One application per 12-month period; dedicated Environment program area", "unsolicited": "unknown", "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM"},
-    {"name": "CLLCTIVLY", "url": "https://www.cllctivly.org/", "region_tags": ["MD"], "typical_range": "Micro-grants historically $500-$5,000; 2026 Rapid Response pool anticipated $5,000-$15,000", "cycle": "Rapid Response pool opening October 2026 per secondary coverage -- time-sensitive, re-verify", "unsolicited": true, "deadline": null, "recurring_deadlines": [], "confidence": "MEDIUM -- secondary coverage, not independently re-fetched from cllctivly.org"},
-    {"name": "Open Society Institute-Baltimore / Maryland Black Futures Fund", "url": "https://www.opensocietyfoundations.org/newsroom/open-society-foundations-to-close-open-society-institute-baltimore-after-25-years-will-invest-20-million-to-seed-the-future-of-social-justice-philanthropy", "region_tags": ["MD"], "typical_range": "Historic Community Fellowship was $60,000/fellow over 18 months (discontinued in this form)", "cycle": "DEFUNCT -- OSI-Baltimore closed, $20M seeded into the Maryland Black Futures Fund, model being redesigned via CLLCTIVLY", "unsolicited": "n/a", "deadline": null, "recurring_deadlines": [], "confidence": "HIGH on closure, LOW on what replaces it"},
-    {"name": "Town Creek Foundation", "url": "https://towncreekfdn.org/", "region_tags": ["MD"], "typical_range": null, "cycle": "CLOSED PERMANENTLY -- foundation dissolved December 31, 2019", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "HIGH -- do-not-use flag, included only so a future list-builder doesn't re-add it from old data"},
-    {"name": "PSEG Foundation", "url": "https://corporate.pseg.com/communityandsustainability/pseg-foundation", "region_tags": ["NJ"], "typical_range": null, "cycle": "Not confirmed this session", "unsolicited": "unknown", "deadline": null, "recurring_deadlines": [], "confidence": "LOW -- not researched beyond existence; also a major NJ utility with potential EJ-litigation relevance, flag internally before pursuing"},
-    {"name": "William Penn Foundation", "url": "https://williampennfoundation.org/", "region_tags": ["PA", "DE"], "typical_range": null, "cycle": "Mostly by invitation", "unsolicited": false, "deadline": null, "recurring_deadlines": [], "confidence": "LOW -- Greater Philadelphia + Delaware River Watershed geography touches southern NJ/PA/DE, not Essex County/Essex; not independently researched beyond org identification"}
+    {
+      "name": "Nathan Cummings Foundation",
+      "url": "https://nathancummings.org/apply/",
+      "region_tags": [
+        "national"
+      ],
+      "typical_range": null,
+      "cycle": "Letters of Inquiry accepted year-round",
+      "unsolicited": true,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Chesapeake Bay Trust -- Healthy Environment, Healthy Communities",
+      "url": "https://cbtrust.org/grants/healthy-environment-healthy-communities/",
+      "region_tags": [
+        "MD"
+      ],
+      "typical_range": "up to $225,000 (Curtis Bay track) / $1.1M (Patapsco-Back River track) in aggregate; individual requests typically $30,000-$100,000",
+      "cycle": "CLOSED -- last deadline 2024-10-24, fully awarded, not anticipated to reopen",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "HIGH on closure"
+    },
+    {
+      "name": "Chesapeake Bay Trust -- general grants page",
+      "url": "https://cbtrust.org/grants/",
+      "region_tags": [
+        "MD",
+        "DC"
+      ],
+      "typical_range": "$9,500 (Community Gardens) to $1,000,000 (PG County Stormwater Stewardship); most community/outreach tracks $10,000-$150,000",
+      "cycle": "Mixed fixed deadlines (Nov 2026-Jan 2027) + 13 rolling-deadline programs",
+      "unsolicited": true,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "HIGH -- primary source read directly"
+    },
+    {
+      "name": "CEEJH -- MATCH 2.0 Mini-Grants",
+      "url": "https://careersandopportunities.com/2026/10/25/grant-2/",
+      "region_tags": [
+        "NJ",
+        "DE",
+        "DC",
+        "MD",
+        "PA",
+        "VA",
+        "WV"
+      ],
+      "typical_range": "$10,000 or $20,000; projects must be in areas above the 50th percentile on Mid-Atlantic EJ Screen 2.0",
+      "cycle": "Fixed deadline",
+      "unsolicited": true,
+      "deadline": "2026-10-31",
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM -- secondary aggregator figures, primary pages blocked this session",
+      "_link_note": "Program pages (ceejh.org, sph.umd.edu/MATCH) block or lack the call; listing link confirmed by hand 2026-10-26. Eligible jurisdictions per listing: DE, DC, MD, NJ, PA, VA, WV."
+    },
+    {
+      "name": "Healthcare Foundation of New Jersey",
+      "url": "https://hfnj.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": null,
+      "cycle": "Letter of Inquiry required before full application",
+      "unsolicited": "conditional",
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Victoria Foundation",
+      "url": "https://www.victoriafoundation.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": "$25,000-$500,000, median ~$45,000",
+      "cycle": "Relationship-based, not a standing open cycle; unsolicited applications paused during a strategic review",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Geraldine R. Dodge Foundation",
+      "url": "https://grdodge.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": "Reserve Fund $20,000-$25,000; Capacity Building ~$5,000; median ~$25,000",
+      "cycle": "By invitation/RFI per program",
+      "unsolicited": "conditional",
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "LOW-MEDIUM"
+    },
+    {
+      "name": "Schumann Fund for New Jersey",
+      "url": "https://schumannfund.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": "Most grants $25,000-$50,000; median first-year grant ~$18,000",
+      "cycle": "Quarterly deadlines",
+      "unsolicited": true,
+      "deadline": null,
+      "recurring_deadlines": [
+        "01-15",
+        "04-15",
+        "07-15",
+        "10-15"
+      ],
+      "confidence": "MEDIUM -- program-area fit (affordable housing/early childhood/youth justice) with environment/EJ NOT confirmed as current priority; re-verify before pursuing"
+    },
+    {
+      "name": "NJ Highlands Coalition -- Small Grants Program",
+      "url": "https://www.njhighlandscoalition.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": "Up to $5,000",
+      "cycle": "Not confirmed this session",
+      "unsolicited": true,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "LOW -- geography is the NJ Highlands region specifically, which may not cover Essex County/Essex County"
+    },
+    {
+      "name": "Community Foundation of New Jersey -- Sheila Williamson Memorial Health Grant",
+      "url": "https://www.cfnj.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": "$2,500-$5,000",
+      "cycle": "Not confirmed this session",
+      "unsolicited": "unknown",
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Fund for New Jersey",
+      "url": "https://fundfornj.org/",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": null,
+      "cycle": "Invitation only -- LOIs currently suspended for unsolicited applicants",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Kresge Foundation",
+      "url": "https://kresge.org/",
+      "region_tags": [
+        "national"
+      ],
+      "typical_range": "Varies widely",
+      "cycle": "Invitation/proactive outreach, not open unsolicited",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Surdna Foundation",
+      "url": "https://surdna.org/",
+      "region_tags": [
+        "national"
+      ],
+      "typical_range": "Recent grants ~$2,000-$2.9M, most under $1M, average ~$275K",
+      "cycle": "Invitation only -- does not accept unsolicited LOIs by explicit policy",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "name": "Eugene and Agnes E. Meyer Foundation",
+      "url": "https://meyerfoundation.org/",
+      "region_tags": [
+        "DC"
+      ],
+      "typical_range": "Rapid Response tiers: $10,000 / $20,000 / $50,000",
+      "cycle": "CLOSED to new applicants for 2026 -- only current grantee partners can renew",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "name": "Morris and Gwendolyn Cafritz Foundation",
+      "url": "https://cafritzfoundation.org/",
+      "region_tags": [
+        "DC",
+        "MD"
+      ],
+      "typical_range": null,
+      "cycle": "One application per 12-month period; dedicated Environment program area",
+      "unsolicited": "unknown",
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "CLLCTIVLY",
+      "url": "https://www.cllctivly.org/",
+      "region_tags": [
+        "MD"
+      ],
+      "typical_range": "Micro-grants historically $500-$5,000; 2026 Rapid Response pool anticipated $5,000-$15,000",
+      "cycle": "Rapid Response pool opening October 2026 per secondary coverage -- time-sensitive, re-verify",
+      "unsolicited": true,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "MEDIUM -- secondary coverage, not independently re-fetched from cllctivly.org"
+    },
+    {
+      "name": "Open Society Institute-Baltimore / Maryland Black Futures Fund",
+      "url": "https://www.opensocietyfoundations.org/newsroom/open-society-foundations-to-close-open-society-institute-baltimore-after-25-years-will-invest-20-million-to-seed-the-future-of-social-justice-philanthropy",
+      "region_tags": [
+        "MD"
+      ],
+      "typical_range": "Historic Community Fellowship was $60,000/fellow over 18 months (discontinued in this form)",
+      "cycle": "DEFUNCT -- OSI-Baltimore closed, $20M seeded into the Maryland Black Futures Fund, model being redesigned via CLLCTIVLY",
+      "unsolicited": "n/a",
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "HIGH on closure, LOW on what replaces it"
+    },
+    {
+      "name": "Town Creek Foundation",
+      "url": "https://towncreekfdn.org/",
+      "region_tags": [
+        "MD"
+      ],
+      "typical_range": null,
+      "cycle": "CLOSED PERMANENTLY -- foundation dissolved December 31, 2019",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "HIGH -- do-not-use flag, included only so a future list-builder doesn't re-add it from old data"
+    },
+    {
+      "name": "PSEG Foundation",
+      "url": "https://corporate.pseg.com/communityandsustainability/pseg-foundation",
+      "region_tags": [
+        "NJ"
+      ],
+      "typical_range": null,
+      "cycle": "Not confirmed this session",
+      "unsolicited": "unknown",
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "LOW -- not researched beyond existence; also a major NJ utility with potential EJ-litigation relevance, flag internally before pursuing"
+    },
+    {
+      "name": "William Penn Foundation",
+      "url": "https://williampennfoundation.org/",
+      "region_tags": [
+        "PA",
+        "DE"
+      ],
+      "typical_range": null,
+      "cycle": "Mostly by invitation",
+      "unsolicited": false,
+      "deadline": null,
+      "recurring_deadlines": [],
+      "confidence": "LOW -- Greater Philadelphia + Delaware River Watershed geography touches southern NJ/PA/DE, not Essex County/Essex; not independently researched beyond org identification"
+    }
   ]
 }
