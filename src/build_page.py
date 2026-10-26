@@ -160,7 +160,8 @@ def njdep_line():
     Incapsula/Imperva WAF that blocks plain scripted requests, and this project does not try to get past bot
     protection. The plain link line stays unconditionally so a person can still open the real calendar."""
     return ('<p class="njdeplink"><a href="https://dep.nj.gov/ej/meetings/" target="_blank" '
-            'rel="noopener">NJDEP EJ hearings calendar</a></p>')
+            'rel="noopener">NJDEP EJ hearings calendar</a> &middot; <a href="https://public.govdelivery.com/accounts/NJDEP/subscriber/new" '
+            'target="_blank" rel="noopener">Get NJDEP EJ hearing notices by county (email)</a></p>')
 
 
 def new_since_yesterday(panel_buckets):

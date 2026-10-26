@@ -43,6 +43,7 @@ https://civileats.com/feed/ | Civil Eats  # kind:pitch
 https://news.google.com/news/rss/search?q=%22environmental+justice%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: EJ New Jersey  # state:NJ
 https://news.google.com/news/rss/search?q=%22overburdened+community%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: overburdened community NJ  # state:NJ
 https://news.google.com/news/rss/search?q=%22cumulative+impacts%22+NJDEP&hl=en-US&gl=US&ceid=US:en | GN: cumulative impacts NJDEP  # state:NJ
+https://news.google.com/news/rss/search?q=%22environmental+justice%22+hearing+NJDEP&hl=en-US&gl=US&ceid=US:en | GN: EJ law hearings NJ  # state:NJ
 https://news.google.com/news/rss/search?q=NJDEP+permit+community&hl=en-US&gl=US&ceid=US:en | GN: NJDEP permit community  # state:NJ
 https://news.google.com/news/rss/search?q=%22New+Jersey%22+pollution+residents&hl=en-US&gl=US&ceid=US:en | GN: NJ pollution residents  # state:NJ
 https://news.google.com/news/rss/search?q=%22New+Jersey%22+warehouse+residents+trucks&hl=en-US&gl=US&ceid=US:en | GN: NJ warehouse residents  # state:NJ
