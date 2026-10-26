@@ -1,0 +1,10 @@
+{
+  "_note": "Per-state EJ statutory vocabulary for LegiScan bill matching (src/legiscan.py), on top of the shared core_terms in src/ej_terms.json. Round 2 research, 2026-10-25/26 -- see each state's entry for the primary-source citation behind the term. Case-insensitive whole-word match, trailing * = stem (same EJMatcher rules as ej_terms.json).",
+  "NY": ["disadvantaged communit*"],
+  "PA": ["environmental justice area*"],
+  "DE": [],
+  "MD": ["overburdened communit*", "underserved communit*"],
+  "DC": ["overburdened communit*", "racial equity"],
+  "_why_DE_empty": "Delaware has no codified EJ statutory term of art found this research round (MEDIUM-confidence absence claim) -- DE bills are matched on the shared core_terms only.",
+  "_why_DC": "DC has no enacted EJ statute; 'overburdened community' is the term from the 2023 bill that died (B25-0564) and may resurface in a reintroduced bill -- flagged as a notable find if it does. 'racial equity' added per the research doc's note that DC's actual climate law (the Climate Commitment Amendment Act) embeds equity language in climate framing rather than a standalone EJ statute."
+}

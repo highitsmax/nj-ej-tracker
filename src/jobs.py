@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""NJ EJ Tracker, stream 5: jobs. USAJOBS Search API -- only active if USAJOBS_API_KEY and USAJOBS_EMAIL are
-both set (USAJOBS requires a registered key + a userEmail header on every call, free, ~1 day turnaround per
-the research doc). Without both, the panel shows "not connected yet" (this script writes an empty list, not
-an error -- an unconfigured stream isn't a failed one).
+"""NJ EJ Tracker, stream 6 (v2): jobs. Three sources feeding one data/jobs.json, each wrapped so one
+source's failure never drops the others:
 
-NOT independently tested live in this build: no USAJOBS key was available in this sandbox. The query shape
-below follows USAJOBS's documented Search API (https://developer.usajobs.gov/api-reference/get-api-search);
-verify the field names against a real response once a key is available (see README).
+  1. USAJOBS Search API -- only if USAJOBS_API_KEY + USAJOBS_EMAIL are both set (unchanged from v1).
+  2. The ATS orgs in src/orgs_ats.json (Greenhouse/Lever/Workable/BambooHR, all keyless, all confirmed
+     live 2026-10-25 per round2/orgs.json) -- keyless, always runs.
+  3. JobSpy (python-jobspy), if importable -- general job-board fallback (Indeed/LinkedIn/Google), guarded
+     by try/except per the build brief: "a JobSpy failure must never fail the jobs stream."
+
+Every posting from every source is run through src/orgs_ats.json's job_filter (include/exclude keyword
+match on title) before it's written. Deduped by (org, title). Capped at 40 rows.
 
 Writes data/jobs.json and data/jobs.status.json. Run: python3 src/jobs.py
 """
@@ -18,38 +21,215 @@ from urllib.parse import urlencode
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import curl, row_id, run_stream  # noqa: E402
 
+HERE = os.path.dirname(os.path.abspath(__file__))
 SEARCH_URL = 'https://data.usajobs.gov/api/search'
+MAX_JOBS = 40
 
 
-def run():
+def load_filter():
+    return json.load(open(os.path.join(HERE, 'orgs_ats.json')))
+
+
+def passes_filter(title, dept, filt):
+    text = f'{title or ""} {dept or ""}'.lower()
+    if any(x in text for x in filt['exclude_keywords']):
+        return False
+    return any(x in text for x in filt['include_keywords'])
+
+
+def fetch_usajobs():
     key, email = os.environ.get('USAJOBS_API_KEY'), os.environ.get('USAJOBS_EMAIL')
     if not (key and email):
-        print('jobs: USAJOBS_API_KEY / USAJOBS_EMAIL not set; panel will show "not connected yet".')
+        print('jobs: USAJOBS_API_KEY / USAJOBS_EMAIL not set; USAJOBS skipped (panel still gets ATS orgs).')
         return []
     params = urlencode({'Keyword': 'environmental justice', 'ResultsPerPage': 25})
     r = curl(f'{SEARCH_URL}?{params}', headers=[
-        f'Authorization-Key: {key}', f'User-Agent: {email}', f'Host: data.usajobs.gov',
+        f'Authorization-Key: {key}', f'User-Agent: {email}', 'Host: data.usajobs.gov',
     ])
     if not r['ok']:
-        raise RuntimeError(f'USAJOBS fetch failed: {r["error"]}')
-    data = json.loads(r['body'])
+        print(f'jobs: USAJOBS fetch failed ({r["error"]}); continuing with other sources.')
+        return []
     rows = []
-    for item in data.get('SearchResult', {}).get('SearchResultItems', []):
-        d = item.get('MatchedObjectDescriptor', {})
-        close = (d.get('ApplicationCloseDate') or '')[:10] or None
-        pos_loc = ', '.join(l.get('LocationName', '') for l in (d.get('PositionLocation') or []))[:120]
-        rows.append({
-            'id': row_id('usajobs', d.get('PositionID')),
-            'date': (d.get('PublicationStartDate') or '')[:10] or None,
-            'title': f"{d.get('PositionTitle', '')} ({pos_loc})" if pos_loc else d.get('PositionTitle', ''),
-            'url': d.get('PositionURI') or d.get('ApplyURI', [None])[0],
-            'source': d.get('DepartmentName', 'USAJOBS'),
-            'deadline': close,
-            'tags': ['federal'],
-            'state': 'US',
-        })
-    print(f'jobs: {len(rows)} USAJOBS result(s)')
+    try:
+        data = json.loads(r['body'])
+        for item in data.get('SearchResult', {}).get('SearchResultItems', []):
+            d = item.get('MatchedObjectDescriptor', {})
+            close = (d.get('ApplicationCloseDate') or '')[:10] or None
+            pos_loc = ', '.join(l.get('LocationName', '') for l in (d.get('PositionLocation') or []))[:120]
+            title = d.get('PositionTitle', '')
+            rows.append({
+                'id': row_id('usajobs', d.get('PositionID')),
+                'date': (d.get('PublicationStartDate') or '')[:10] or None,
+                'title': f'{title} ({pos_loc})' if pos_loc else title,
+                'url': d.get('PositionURI') or (d.get('ApplyURI') or [None])[0],
+                'source': d.get('DepartmentName', 'USAJOBS'),
+                'deadline': close,
+                'tags': ['federal'],
+                'state': 'US',
+                'kind': 'job',
+                '_org': d.get('DepartmentName', 'USAJOBS'), '_title': title,
+            })
+    except Exception as e:
+        print(f'jobs: USAJOBS response parse failed: {e}')
+        return []
+    print(f'jobs: {len(rows)} USAJOBS result(s) (pre-filter)')
     return rows
+
+
+def _greenhouse(org, endpoint):
+    r = curl(endpoint)
+    if not r['ok']:
+        raise RuntimeError(r['error'])
+    data = json.loads(r['body'])
+    out = []
+    for j in data.get('jobs', []):
+        loc = (j.get('location') or {}).get('name', '')
+        out.append((j.get('title', ''), loc, j.get('absolute_url'), (j.get('updated_at') or '')[:10], None))
+    return out
+
+
+def _lever(org, endpoint):
+    r = curl(endpoint)
+    if not r['ok']:
+        raise RuntimeError(r['error'])
+    data = json.loads(r['body'])
+    out = []
+    for j in data:
+        cats = j.get('categories', {}) or {}
+        out.append((j.get('text', ''), cats.get('location', ''), j.get('hostedUrl'), (j.get('createdAt') and str(j.get('createdAt'))[:10]) or None, cats.get('team')))
+    return out
+
+
+def _workable(org, endpoint):
+    r = curl(endpoint, method='POST', data='{}')
+    if not r['ok']:
+        raise RuntimeError(r['error'])
+    data = json.loads(r['body'])
+    out = []
+    for j in data.get('results', []):
+        loc = j.get('location', {}) or {}
+        loc_s = ', '.join(x for x in [loc.get('city'), loc.get('region')] if x)
+        out.append((j.get('title', ''), loc_s, j.get('url'), None, j.get('department')))
+    return out
+
+
+def _bamboohr(org, endpoint):
+    r = curl(endpoint, headers=['Accept: application/json'])
+    if not r['ok']:
+        raise RuntimeError(r['error'])
+    data = json.loads(r['body'])
+    out = []
+    for j in data.get('result', []):
+        loc = j.get('location', {}) or {}
+        loc_s = ', '.join(x for x in [loc.get('city'), loc.get('state')] if x)
+        out.append((j.get('jobOpeningName', ''), loc_s, f"https://{org.lower().replace(' ', '')}.bamboohr.com/careers/{j.get('id')}", None, j.get('departmentLabel')))
+    return out
+
+
+FETCHERS = {'greenhouse': _greenhouse, 'lever': _lever, 'workable': _workable, 'bamboohr': _bamboohr}
+
+
+def fetch_ats_orgs(filt):
+    cfg = load_filter()
+    rows = []
+    for org in cfg['orgs']:
+        fn = FETCHERS.get(org['ats'])
+        if not fn:
+            continue
+        try:
+            postings = fn(org['name'], org['endpoint'])
+        except Exception as e:
+            print(f"jobs: ATS org {org['name']} ({org['ats']}) failed: {e}", file=sys.stderr)
+            continue
+        for title, loc, url, date_s, dept in postings:
+            rows.append({
+                'id': row_id('ats', org['name'], title, url or ''),
+                'date': date_s,
+                'title': f'{title} ({loc})' if loc else title,
+                'url': url,
+                'source': org['name'],
+                'deadline': None,
+                'tags': ['org'],
+                'state': 'US',
+                'kind': 'job',
+                '_org': org['name'], '_title': title, '_dept': dept,
+            })
+    print(f'jobs: {len(rows)} ATS-org result(s) (pre-filter) across {len(cfg["orgs"])} org(s)')
+    return rows
+
+
+def fetch_jobspy():
+    try:
+        from jobspy import scrape_jobs
+    except Exception as e:
+        print(f'jobs: JobSpy not importable ({e}); skipping (guarded, never fails the stream). '
+              f'See BUILD_REPORT for the sandbox-specific pip install note.')
+        return []
+    terms = ['environmental justice', 'climate communications', 'environmental communications']
+    locations = ['New Jersey', 'Baltimore, MD', 'Washington, DC']
+    rows = []
+    for term in terms:
+        for loc in locations:
+            try:
+                df = scrape_jobs(site_name=['indeed', 'linkedin', 'google'], search_term=term, location=loc,
+                                  results_wanted=15, hours_old=168, country_indeed='USA')
+                rows += _jobspy_rows(df)
+            except Exception as e:
+                print(f'jobs: JobSpy search failed (term={term!r}, location={loc!r}): {e}', file=sys.stderr)
+        try:
+            df = scrape_jobs(site_name=['indeed', 'linkedin', 'google'], search_term=term, is_remote=True,
+                              results_wanted=15, hours_old=168, country_indeed='USA')
+            rows += _jobspy_rows(df)
+        except Exception as e:
+            print(f'jobs: JobSpy remote search failed (term={term!r}): {e}', file=sys.stderr)
+    print(f'jobs: {len(rows)} JobSpy result(s) (pre-filter)')
+    return rows
+
+
+def _jobspy_rows(df):
+    out = []
+    try:
+        records = df.to_dict('records')
+    except Exception:
+        return out
+    for r in records:
+        title, company = r.get('title', ''), r.get('company', '') or 'JobSpy'
+        out.append({
+            'id': row_id('jobspy', company, title, str(r.get('job_url', ''))),
+            'date': str(r.get('date_posted') or '')[:10] or None,
+            'title': f"{title} ({r.get('location', '')})" if r.get('location') else title,
+            'url': r.get('job_url'),
+            'source': company,
+            'deadline': None,
+            'tags': ['jobspy'],
+            'state': 'US',
+            'kind': 'job',
+            '_org': company, '_title': title,
+        })
+    return out
+
+
+import re as _re
+IN_REGION = _re.compile(r"(New Jersey|\bNJ\b|New York|\bNY\b|Pennsylvania|\bPA\b|Philadelphia|Delaware|\bDE\b|Maryland|\bMD\b|Baltimore|Washington,? DC|\bD\.?C\.?\b|District of Columbia|Remote|Anywhere|Mid-Atlantic|Northeast)", _re.I)
+
+
+def run():
+    filt = load_filter()['job_filter']
+    raw = fetch_usajobs() + fetch_ats_orgs(filt) + fetch_jobspy()
+    filtered, seen = [], set()
+    for r in raw:
+        if not passes_filter(r.get('_title'), r.get('_dept'), filt):
+            continue
+        key = (r.get('_org', '').lower(), r.get('_title', '').lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        if not IN_REGION.search(f"{r.get('title', '')} {r.get('source', '')}"):
+            continue   # outside the tracked region and not remote
+        r.pop('_org', None); r.pop('_title', None); r.pop('_dept', None)
+        filtered.append(r)
+    print(f'jobs: {len(filtered)} posting(s) pass the comms/EJ job filter (of {len(raw)} raw, before the {MAX_JOBS}-row cap)')
+    return filtered[:MAX_JOBS]
 
 
 if __name__ == '__main__':

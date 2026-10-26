@@ -220,3 +220,31 @@ class EJMatcher:
 
 def load_rules():
     return json.load(open(os.path.join(HERE, 'ej_terms.json')))
+
+
+# ---------------------------------------------------------------- "New since yesterday" tracking (v2).
+# data/seen.json = {item_id: first_seen_iso}. Call mark_seen() once per build with every row id currently on
+# the page; it returns the set of ids that are new within the last 24h, and prunes ids not seen in 60 days.
+SEEN_PATH = os.path.join(DATA_DIR, 'seen.json')
+
+
+def mark_seen(all_ids):
+    from datetime import timedelta
+    seen = load_json(SEEN_PATH, {})
+    now_dt = datetime.now(timezone.utc)
+    now_s = now_dt.isoformat(timespec='seconds')
+    cutoff_24h = (now_dt - timedelta(hours=24)).isoformat(timespec='seconds')
+    cutoff_60d = (now_dt - timedelta(days=60)).isoformat(timespec='seconds')
+    new_ids = set()
+    all_ids = set(all_ids)
+    for i in all_ids:
+        if i not in seen:
+            seen[i] = now_s
+            new_ids.add(i)
+        elif seen[i] >= cutoff_24h:
+            new_ids.add(i)
+    # prune: any id not seen (first_seen) within the last 60 days gets dropped from the tracking file,
+    # whether or not it's still on the page today -- keeps seen.json from growing forever.
+    seen = {i: ts for i, ts in seen.items() if ts >= cutoff_60d}
+    write_json(SEEN_PATH, seen)
+    return new_ids

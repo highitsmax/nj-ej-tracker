@@ -1,0 +1,27 @@
+{
+  "_note": "Hand-kept ATS endpoint list for the Jobs sub-section, built 2026-10-26 from round2/orgs.json. Only orgs with a confirmed keyless, working JSON endpoint ('tested': 'ok') are wired up here -- the rest of round2/orgs.json's 38 candidates have no clean feed (html-only, blocked, failed-guess, or untested) and are not part of this build; a future round could add a per-org html scrape, but that's a new feature, not this one. job_filter mirrors round2/orgs.json._meta.job_filter verbatim.",
+  "orgs": [
+    {"name": "World Resources Institute", "ats": "greenhouse", "endpoint": "https://boards-api.greenhouse.io/v1/boards/wri/jobs"},
+    {"name": "Sierra Club", "ats": "lever", "endpoint": "https://api.lever.co/v0/postings/sierraclub?mode=json"},
+    {"name": "Evergreen Action", "ats": "greenhouse", "endpoint": "https://boards-api.greenhouse.io/v1/boards/evergreenaction/jobs"},
+    {"name": "Union of Concerned Scientists", "ats": "workable", "endpoint": "https://apply.workable.com/api/v3/accounts/union-of-concerned-scientists/jobs"},
+    {"name": "Groundwork USA", "ats": "bamboohr", "endpoint": "https://groundworkusa.bamboohr.com/careers/list"}
+  ],
+  "job_filter": {
+    "include_keywords": [
+      "communications", "comms", "media relations", "press", "public relations", "pr manager",
+      "storytelling", "narrative", "digital", "content", "social media", "campaign", "campaigns",
+      "organizer", "organizing", "outreach", "engagement", "advocacy", "policy communications",
+      "writer", "editor", "brand", "marketing"
+    ],
+    "exclude_keywords": [
+      "engineer", "engineering", "software", "developer", "accountant", "accounting", "controller",
+      "bookkeeper", "it ", "network administrator", "electrician", "plumber", "hvac", "mechanic",
+      "nurse", "clinician", "physician", "attorney", "counsel", "paralegal", "scientist", "biologist",
+      "ecologist", "gis", "lab technician", "custodian", "driver", "warehouse associate"
+    ],
+    "seniority_exclude_unless_comms": [
+      "director", "vice president", "vp ", "chief", "executive director", "president"
+    ]
+  }
+}

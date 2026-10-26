@@ -1,0 +1,126 @@
+{
+  "_note": "Hand-kept pitch-outlet seed list for the 'Pitch & publish' panel, built 2026-10-26 from the research needs-list doc section 5. Rows where the pitch channel itself was UNVERIFIED this round are left OUT entirely per the build brief: Capital B News (channel unverified), New Jersey Monitor (contact page 403'd, no confirmed channel), Floodlight (no pitch channel named at all). Baltimore Banner is also left out by builder judgment (logged as an ASSUMPTION in the build report): its only channels are 'Community Voices' (non-professional-writer submissions) and Letters -- its own ethics page says the paid Opinion section is discontinued, so it isn't a freelance-pitch market even though it technically has an email address. 'rate' is populated ONLY when this session fetched the outlet's own pitch/guidelines page directly and found a dollar figure in the page text (verbatim, see BUILD_REPORT for the exact snippet + URL); every other row's rate is null and the page shows 'rates: see guidelines'.",
+  "outlets": [
+    {
+      "outlet": "Grist",
+      "pitch_channel": "pitches@grist.org",
+      "pitch_url": "https://grist.org/about/pitch-grist-stories/",
+      "formats": "Reported features",
+      "rate": "Rates start at 80 cents per word",
+      "rate_verbatim_fetched": true
+    },
+    {
+      "outlet": "Inside Climate News",
+      "pitch_channel": "editors, subject line \"QUERY\"",
+      "pitch_url": "https://healthjournalism.org/wp-content/uploads/2025/04/Inside-Climate-News-Pitch-Guidelines.pdf",
+      "formats": "News preferred; no essays/editorials",
+      "rate": null,
+      "rate_verbatim_fetched": true
+    },
+    {
+      "outlet": "Capital & Main",
+      "pitch_channel": "storypitches@capitalandmain.com",
+      "pitch_url": "https://capitalandmain.com/careers",
+      "formats": "Investigative, inequality/climate",
+      "rate": null,
+      "rate_verbatim_fetched": true
+    },
+    {
+      "outlet": "Yes! Magazine",
+      "pitch_channel": "submissions@yesmagazine.org",
+      "pitch_url": "https://www.yesmagazine.org/about/writers-guidelines-submissions",
+      "formats": "Features, Commentary (500w), In Review",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "Guidelines page returned a Cloudflare bot-check page to this sandbox (no article text reachable) -- retest from the Actions runner."
+    },
+    {
+      "outlet": "Sierra (Sierra Club)",
+      "pitch_channel": "submission form on sierraclub.org/sierra",
+      "pitch_url": "https://www.sierraclub.org/sierra",
+      "formats": "Features, online op-ed/analysis",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "No single guidelines URL given; the feed itself (sierraclub.org/sierra/feed) also 302-redirect-loops -- see src/feeds.txt.",
+      "_url_note": "homepage (no single public guidelines page); added 2026-10-26"
+    },
+    {
+      "outlet": "High Country News",
+      "pitch_channel": "essays@hcn.org; feature pitches to named desk editors",
+      "pitch_url": "https://www.hcn.org/",
+      "formats": "Reported features, essays, desk-specific",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "No single guidelines URL given (desk editors named instead).",
+      "_url_note": "homepage (no single public guidelines page); added 2026-10-26"
+    },
+    {
+      "outlet": "Civil Eats",
+      "pitch_channel": "pitch form",
+      "pitch_url": "https://civileats.com/about/how-to-pitch-civil-eats/",
+      "formats": "Reported features",
+      "rate": null,
+      "rate_verbatim_fetched": true,
+      "rate_fetch_note": "Page fetched directly; gives word-count ranges per section but no dollar figure."
+    },
+    {
+      "outlet": "Prism Reports",
+      "pitch_channel": "pitch form",
+      "pitch_url": "https://prismreports.org/about/pitch-prism/",
+      "formats": "News, essays, opinion",
+      "rate": "The $400 base rate reflects the typical scope and reporting demands of these pieces",
+      "rate_verbatim_fetched": true
+    },
+    {
+      "outlet": "Earth Island Journal",
+      "pitch_channel": "query via email, subject line \"pitch\"",
+      "pitch_url": "https://www.earthisland.org/journal/",
+      "formats": "Reported features, on-the-ground reports",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "No guidelines URL given.",
+      "_url_note": "homepage (no single public guidelines page); added 2026-10-26"
+    },
+    {
+      "outlet": "Atmos",
+      "pitch_channel": "features@atmos.earth",
+      "pitch_url": "https://atmos.earth/",
+      "formats": "Investigative, essays, photo essays",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "No guidelines URL given; secondary sources conflict ($500/piece flat vs $0.50/word) -- do not average or show either.",
+      "_url_note": "homepage (no single public guidelines page); added 2026-10-26"
+    },
+    {
+      "outlet": "NJ Spotlight News",
+      "pitch_channel": "info@njspotlight.com, or named editors (Maire Crowe, John Mooney)",
+      "pitch_url": "https://www.njspotlightnews.org/",
+      "formats": "Op-ed",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "State-policy nonprofit newsrooms commonly run op-eds unpaid; no guidelines URL given.",
+      "_url_note": "homepage (no single public guidelines page); added 2026-10-26"
+    },
+    {
+      "outlet": "Baltimore Brew",
+      "pitch_channel": "story tips to editors@baltimorebrew.com",
+      "pitch_url": "https://baltimorebrew.com/",
+      "formats": "Accountability/investigative, informal",
+      "rate": null,
+      "rate_verbatim_fetched": false,
+      "rate_fetch_note": "No formal pitch page found -- tips channel only.",
+      "_url_note": "homepage (no single public guidelines page); added 2026-10-26"
+    }
+  ],
+  "skipped_unverified_channel": [
+    "Capital B News",
+    "New Jersey Monitor",
+    "Floodlight",
+    "Scalawag",
+    "Undark"
+  ],
+  "_skipped_unverified_channel_note": "Scalawag and Undark have live feeds (kept in src/feeds.txt for the news panels) but the research needs-list doc itself marks their pitch channel 'UNVERIFIED' (not directly searched this session) -- per the build brief's skip rule they are left OUT of the Pitch & publish panel, not included with a placeholder channel.",
+  "skipped_by_builder_judgment": {
+    "Baltimore Banner": "Not a freelance-pay market (Opinion section discontinued per the outlet's own ethics page); only non-professional-writer Community Voices + Letters remain. Logged as an ASSUMPTION."
+  }
+}

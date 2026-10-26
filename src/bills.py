@@ -2,9 +2,8 @@
 """NJ EJ Tracker, stream 2: NJ state bills. NJ only (keyless NJ Legislature
 bulk ZIP), trimmed down: no stage history, no alerting, no SQLite -- one flat list of currently-matched bills.
 
-LegiScan path (other 49 states): kept as a disabled stub per the build brief ("keep the LegiScan code path
-but disabled unless LEGISCAN_API_KEY is set"). NOT wired up to do a real pull in v1 -- scope is NJ only; if
-you ever want other states, legiscan_note() is the place to build it out (see README).
+LegiScan path (NY/PA/DE/MD/DC): v2 (2026-10-26) wires this up for real in src/legiscan.py, a separate
+script writing data/bills_legiscan.json -- NJ stays on this script's keyless bulk-ZIP path.
 
 Writes data/bills.json and data/bills.status.json. Run: python3 src/bills.py
 """
@@ -79,6 +78,7 @@ def run():
             'deadline': None,
             'tags': hits,
             'state': 'NJ',
+            'kind': None,
         })
     print(f'bills: {n_total} NJ bills scanned, {len(rows)} match the EJ vocabulary. {legiscan_note()}')
     return rows

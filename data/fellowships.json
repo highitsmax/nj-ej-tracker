@@ -1,22 +1,41 @@
 [
-  {
-    "id": "fellowship-switzer",
-    "date": "2026-10-25",
-    "title": "Switzer Environmental Fellowship -- $18,000 unrestricted award (VERIFY: figure is secondary-source, not re-confirmed on switzernetwork.org)",
-    "url": "https://switzernetwork.org/",
-    "source": "Switzer Foundation (hand-kept, not pulled live)",
-    "deadline": "2026-12-14",
-    "tags": ["individual", "graduate-students", "verify"],
-    "state": "US"
-  },
-  {
-    "id": "fellowship-agents-of-change",
-    "date": "2026-10-25",
-    "title": "Agents of Change in Environmental Justice Fellowship -- $3,000 honorarium (VERIFY: figure is secondary-source, not re-confirmed on the program's own site)",
-    "url": "https://www.agentsofchangeinej.org/",
-    "source": "Agents of Change in EJ (hand-kept, not pulled live)",
-    "deadline": null,
-    "tags": ["individual", "early-career", "verify"],
-    "state": "US"
-  }
+ {
+  "id": "183963bbc809b82a",
+  "date": null,
+  "title": "Switzer Environmental Fellowship — $18,000",
+  "url": "https://www.switzernetwork.org/how-apply",
+  "source": "Fellowship",
+  "deadline": "2026-12-14",
+  "tags": [
+   "fellowship"
+  ],
+  "state": "US",
+  "kind": "fellowship"
+ },
+ {
+  "id": "57224f771e2fb25f",
+  "date": null,
+  "title": "Uproot Project Fellowship",
+  "url": "https://uprootproject.org/",
+  "source": "Fellowship",
+  "deadline": null,
+  "tags": [
+   "fellowship"
+  ],
+  "state": "US",
+  "kind": "fellowship"
+ },
+ {
+  "id": "675a0e8d549db08d",
+  "date": null,
+  "title": "Wake Forest Mellon Environmental Justice Journalism Fellowship",
+  "url": "https://www.sej.org/initiatives/awards-fellowships/non-sej-environmental-journalism-fellowships-and-workshops",
+  "source": "Fellowship",
+  "deadline": null,
+  "tags": [
+   "fellowship"
+  ],
+  "state": "US",
+  "kind": "fellowship"
+ }
 ]

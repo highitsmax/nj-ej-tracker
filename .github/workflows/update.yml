@@ -26,7 +26,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run streams (stdlib only; each stream keeps its last good data if it fails)
+      - name: Install JobSpy (jobs.py guards the import -- a failed/missing install never fails this step)
+        continue-on-error: true
+        run: pip install --quiet python-jobspy==1.4.1
+
+      - name: Run streams (stdlib only except JobSpy; each stream keeps its last good data if it fails)
         env:
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
@@ -36,10 +40,17 @@ jobs:
         run: |
           python3 src/news.py
           python3 src/bills.py
+          python3 src/legiscan.py
           python3 src/comments.py
           python3 src/grants.py
           python3 src/jobs.py
+          python3 src/outlets.py
+          python3 src/alerts.py
           python3 src/congress.py
+
+      - name: NJDEP hearings probe (informational only -- dep.nj.gov is WAF-walled; never fails the run)
+        continue-on-error: true
+        run: python3 src/njdep_probe.py
 
       - name: Build the page (unencrypted, local only)
         run: python3 src/build_page.py

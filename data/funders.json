@@ -1,0 +1,80 @@
+[
+ {
+  "id": "2bfb4ebbe99c7e3d",
+  "date": null,
+  "title": "Nathan Cummings Foundation",
+  "url": "https://nathancummings.org/apply/",
+  "source": "Letters of Inquiry accepted year-round",
+  "deadline": null,
+  "tags": [
+   "funder"
+  ],
+  "state": "US",
+  "kind": "grant"
+ },
+ {
+  "id": "89e4626292a4199b",
+  "date": null,
+  "title": "Chesapeake Bay Trust -- general grants page",
+  "url": "https://cbtrust.org/grants/",
+  "source": "$9,500 (Community Gardens) to $1,000,000 (PG County Stormwater Stewardship); most community/outreach tracks $10,000-$150,000 · Mixed fixed deadlines (Nov 2026-Jan 2027) + 13 rolling-deadline programs",
+  "deadline": null,
+  "tags": [
+   "funder"
+  ],
+  "state": "US",
+  "kind": "grant"
+ },
+ {
+  "id": "457be92cc30730b0",
+  "date": null,
+  "title": "CEEJH -- MATCH 2.0 Mini-Grants",
+  "url": "https://ceejh.org/engagement/match-2-0/",
+  "source": "$10,000 (20 grants) / $20,000 (5 grants), ~$300,000 total pool · Fixed deadline",
+  "deadline": "2026-10-31",
+  "tags": [
+   "funder"
+  ],
+  "state": "US",
+  "kind": "grant"
+ },
+ {
+  "id": "91b4f2955a8c42a2",
+  "date": null,
+  "title": "Schumann Fund for New Jersey",
+  "url": "https://schumannfund.org/",
+  "source": "Most grants $25,000-$50,000; median first-year grant ~$18,000 · Quarterly deadlines",
+  "deadline": "2027-01-15",
+  "tags": [
+   "funder"
+  ],
+  "state": "US",
+  "kind": "grant"
+ },
+ {
+  "id": "586a4684591f4058",
+  "date": null,
+  "title": "NJ Highlands Coalition -- Small Grants Program",
+  "url": "https://www.njhighlandscoalition.org/",
+  "source": "Up to $5,000 · Not confirmed this session",
+  "deadline": null,
+  "tags": [
+   "funder"
+  ],
+  "state": "US",
+  "kind": "grant"
+ },
+ {
+  "id": "892eacad3cdd88d1",
+  "date": null,
+  "title": "CLLCTIVLY",
+  "url": "https://www.cllctivly.org/",
+  "source": "Micro-grants historically $500-$5,000; 2026 Rapid Response pool anticipated $5,000-$15,000 · Rapid Response pool opening October 2026 per secondary coverage -- time-sensitive, re-verify",
+  "deadline": null,
+  "tags": [
+   "funder"
+  ],
+  "state": "US",
+  "kind": "grant"
+ }
+]

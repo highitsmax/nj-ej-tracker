@@ -1,18 +1,5 @@
 [
  {
-  "id": "9bb9ed9129c49d2f",
-  "date": "2026-10-19",
-  "title": "New Source Performance Standards and National Emission Standards for Hazardous Air Pollutants; Delegation of Authority to Northwest Clean Air Agency, Washington State",
-  "url": "http://www.regulations.gov/commenton/EPA-R10-OAR-2026-4291-0013",
-  "source": "Federal Register (EPA)",
-  "deadline": "2026-11-18",
-  "tags": [
-   "prorule",
-   "epa"
-  ],
-  "state": "US"
- },
- {
   "id": "3af7f70e1d60613e",
   "date": "2026-10-16",
   "title": "Renewable Fuel Standard (RFS) Program: Reallocation of Additional 2025 Small Refinery Exemptions",
@@ -23,7 +10,8 @@
    "prorule",
    "epa"
   ],
-  "state": "US"
+  "state": "US",
+  "kind": "comment"
  },
  {
   "id": "5d15aa540bdbab79",
@@ -36,7 +24,8 @@
    "prorule",
    "epa"
   ],
-  "state": "US"
+  "state": "US",
+  "kind": "comment"
  },
  {
   "id": "f343c23c2dca5ef1",
@@ -49,7 +38,8 @@
    "prorule",
    "epa"
   ],
-  "state": "US"
+  "state": "US",
+  "kind": "comment"
  },
  {
   "id": "ade395344ea59897",
@@ -62,7 +52,8 @@
    "prorule",
    "epa"
   ],
-  "state": "US"
+  "state": "US",
+  "kind": "comment"
  },
  {
   "id": "6cbbab86ac479087",
@@ -75,6 +66,7 @@
    "prorule",
    "epa"
   ],
-  "state": "US"
+  "state": "US",
+  "kind": "comment"
  }
 ]

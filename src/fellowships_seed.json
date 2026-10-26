@@ -1,0 +1,36 @@
+{
+  "_note": "Hand-kept EJ/climate-journalism fellowship seed list, like the repo's existing data/fellowships.json pattern. Rebuilt 2026-10-26 from round-2 primary-source verification research. 'amount' is shown on the page ONLY when 'amount_verified' is true (primary-sourced, fetched directly); otherwise the page shows name + link + deadline only, per the build brief. 'deadline' null means no verified upcoming deadline to show -- never guess one. An entry with a deadline that has already passed and no confirmed next-cycle date is left OUT of this file entirely (see the Agents of Change note below), not included-but-hidden.",
+  "fellowships": [
+    {
+      "name": "Switzer Environmental Fellowship",
+      "amount": "$18,000",
+      "amount_verified": true,
+      "amount_source": "switzernetwork.org/fellowship/become-fellow, verified 2026-10-25: \"The fellowship includes a $18,000 cash award...\"",
+      "deadline": "2026-12-14",
+      "deadline_source": "switzernetwork.org/how-apply, verified 2026-10-25: \"Applications are due at 11:59 pm PST on Monday, December 14, 2026.\"",
+      "url": "https://www.switzernetwork.org/how-apply",
+      "eligibility_note": "Graduate students at an accredited US/territory institution."
+    },
+    {
+      "name": "Uproot Project Fellowship",
+      "amount": null,
+      "amount_verified": false,
+      "amount_source": "Secondary synthesis only (up to $2,000 for reporting expenses per program materials) -- NOT independently re-verified on uprootproject.org this session; not shown on the page.",
+      "deadline": null,
+      "url": "https://uprootproject.org/",
+      "eligibility_note": "Network for environmental journalists of color; funded fellowship + the biweekly 'The Seedling' newsletter."
+    },
+    {
+      "name": "Wake Forest Mellon Environmental Justice Journalism Fellowship",
+      "amount": null,
+      "amount_verified": false,
+      "amount_source": "Secondary synthesis only (stipend + travel; institute dated June 1-4, 2026 per search synthesis, MEDIUM confidence) -- not independently re-verified; not shown on the page. The institute date already passed this year and no confirmed next-cycle date was found, so no deadline is shown either -- see this list via SEJ's maintained external fellowship roundup.",
+      "deadline": null,
+      "url": "https://www.sej.org/initiatives/awards-fellowships/non-sej-environmental-journalism-fellowships-and-workshops",
+      "eligibility_note": "4-6 early/mid-career journalists."
+    }
+  ],
+  "_omitted": {
+    "Agents of Change in Environmental Justice Fellowship": "2026-2027 cycle deadline (Oct 1, 2026) already passed as of this build (2026-10-26); agentsofchangeinej.org/application-2026/ states the 2026 application is closed. No confirmed next-cycle date was found this round, so per the build brief ('list it with next cycle if the file gives one, else omit') it is left out entirely rather than shown with a stale deadline. Re-add once a 2027-28 cycle date is confirmed on agentsofchangeinej.org."
+  }
+}

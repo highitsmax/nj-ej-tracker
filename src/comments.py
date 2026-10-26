@@ -50,15 +50,19 @@ def fetch_federal_register():
         if not close or close < tdy:
             continue  # only open comment periods (spec: today or later)
         agencies = ', '.join(a.get('name', '') for a in (d.get('agencies') or []))[:120]
+        title = d.get('title', '')
+        if leaks_another_state(title):
+            continue
         rows.append({
             'id': row_id('fr', d.get('html_url')),
             'date': d.get('publication_date'),
-            'title': d.get('title', '')[:200],
+            'title': title[:200],
             'url': d.get('comment_url') or d.get('html_url'),
             'source': f"Federal Register ({agencies})" if agencies else 'Federal Register',
             'deadline': close,
             'tags': [d.get('type', '').lower()],
             'state': 'US',
+            'kind': 'comment',
         })
     return rows
 
@@ -82,21 +86,49 @@ def fetch_regulations_gov():
         close = (a.get('commentEndDate') or '')[:10] or None
         if not close or close < tdy:
             continue
+        title = a.get('title') or ''
+        if leaks_another_state(title):
+            continue
         rows.append({
             'id': row_id('regs', d.get('id')),
             'date': (a.get('postedDate') or '')[:10],
-            'title': (a.get('title') or '')[:200],
+            'title': title[:200],
             'url': f"https://www.regulations.gov/document/{d.get('id')}",
             'source': f"Regulations.gov ({a.get('agencyId', '')})",
             'deadline': close,
             'tags': ['docket'],
             'state': 'US',
+            'kind': 'comment',
         })
     return rows
 
 
 MY_STATES = re.compile(r"\b(New Jersey|NJ|New York|NY|Pennsylvania|PA|Delaware|DE|Maryland|MD|District of Columbia|DC)\b")
 STATE_SIP = re.compile(r"(Air (Quality )?Plan|Implementation Plans?|Air Plan Approval|Primacy|Nonattainment|Maintenance Plan|Designated Facilities|Approval of State)", re.I)
+
+# v2 leak fix (2026-10-26): a Federal Register title naming ANY US state/territory other than the 6 this
+# tracker tracks (NJ/NY/PA/DE/MD/DC) is dropped outright, not just the SIP-pattern subset STATE_SIP caught
+# before. Built in code (not ej_terms.json) per the build brief. The list is the 50 states + DC + the
+# territories Federal Register notices commonly name; it is intentionally over-inclusive (a false-positive
+# "name" match on a state name inside an unrelated word is unlikely given the word-boundary regex).
+OTHER_STATES = [
+    'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Florida',
+    'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+    'Maine', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska',
+    'Nevada', 'New Hampshire', 'New Mexico', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma',
+    'Oregon', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+    'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',
+    'Puerto Rico', 'Guam', 'American Samoa', 'U.S. Virgin Islands', 'Northern Mariana Islands',
+]
+OTHER_STATES_RX = re.compile(r'\b(' + '|'.join(re.escape(s) for s in OTHER_STATES) + r')\b')
+
+
+def leaks_another_state(title):
+    """True if the title names a state/territory outside NJ/NY/PA/DE/MD/DC -- drop it, even if it also
+    matches an EJ term, per the build brief's leak fix. New Hampshire/New Mexico/New York all start with
+    'New ' so the word-boundary regex (not a prefix match) is what keeps 'New Jersey' from false-tripping
+    on 'New Mexico's own pattern or vice versa."""
+    return bool(OTHER_STATES_RX.search(title or ''))
 
 
 def fetch_epa_open():
@@ -116,13 +148,15 @@ def fetch_epa_open():
             continue
         if STATE_SIP.search(title) and not MY_STATES.search(title):
             continue
+        if leaks_another_state(title):  # v2 leak fix: catches non-SIP EPA titles naming another state too
+            continue
         st = 'US'
         m = MY_STATES.search(title) if STATE_SIP.search(title) else None
         if m:
             st = {'New Jersey':'NJ','New York':'NY','Pennsylvania':'PA','Delaware':'DE','Maryland':'MD','District of Columbia':'DC'}.get(m.group(1), m.group(1))
         rows.append({'id': row_id('fr', d.get('html_url')), 'date': d.get('publication_date'), 'title': title[:200],
                      'url': d.get('comment_url') or d.get('html_url'), 'source': 'Federal Register (EPA)',
-                     'deadline': close, 'tags': ['prorule', 'epa'], 'state': st})
+                     'deadline': close, 'tags': ['prorule', 'epa'], 'state': st, 'kind': 'comment'})
     return rows
 
 

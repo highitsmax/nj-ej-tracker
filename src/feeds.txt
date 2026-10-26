@@ -1,35 +1,61 @@
-# NJ EJ Tracker news feeds. One per line: URL | label. Every feed is filtered through the EJ keyword
-# rules in ej_terms.json (src/common.py EJMatcher) -- there is no "[filter]"/unfiltered distinction here;
-# even EJ-dedicated orgs post plenty of non-EJ stories, so everything gets the same keyword gate.
+# NJ EJ Tracker v2 news feeds. One per line: URL | label. Trailing "# token token ..." comment carries
+# machine-readable tags read by news.py's load_feeds(): state:XX (home state/panel), kind:allied|pitch
+# (allied-org press feeds and beat-outlet "pitch" feeds get different filter treatment -- see news.py),
+# town:Name (hyperlocal query town, shown in row meta). Feeds with no kind: tag go through the standard
+# EJ-keyword filter (src/ej_terms.json EJMatcher) and are routed NJ vs National&outlets by whether the
+# STORY TEXT names NJ or an NJ place (current v1 logic, unchanged).
 
-# -- National/EJ-focused (VALID-XML 2026-10-25) --
-https://insideclimatenews.org/feed/ | Inside Climate News
-https://grist.org/feed/ | Grist
-https://www.propublica.org/feeds/propublica/main | ProPublica
-https://www.theguardian.com/environment/rss | The Guardian: Environment
-https://www.theguardian.com/environment/pollution/rss | The Guardian: Pollution
-https://publicintegrity.org/feed/ | Center for Public Integrity
-https://www.desmog.com/feed/ | DeSmog
-https://capitalandmain.com/feed | Capital & Main
-https://www.hcn.org/feed | High Country News
-https://earthjustice.org/feed | Earthjustice
-https://chej.org/feed/ | Center for Health, Environment & Justice
-https://checksandbalancesproject.org/feed/ | Checks and Balances Project
-https://capitalbnews.org/feed/ | Capital B News
-https://www.ehn.org/feeds/feed.rss | Environmental Health News
-https://www.canarymedia.com/rss.rss | Canary Media
-
-# -- NJ outlets (general outlets, EJ keyword filter applies to all) --
-# Trailing "  # state:XX" tags the feed's state (news.py reads this; config/states.json lists the codes this
-# tracker knows about). Everything else defaults to US (federal/national) per the build brief.
+# -- NJ outlets (general, EJ keyword filter + NJ-place-in-text routing applies) --
 https://www.njspotlightnews.org/feed/ | NJ Spotlight News  # state:NJ
 https://newjerseymonitor.com/feed/ | New Jersey Monitor  # state:NJ
 https://www.insidernj.com/feed/ | InsiderNJ  # state:NJ
 
-# -- Google News search RSS (keyless) --
+# -- NJ allied-org press feeds (no EJ filter -- keep every item, tag source as the org; NJ panel) --
+https://njeja.org/feed/ | NJEJA  # state:NJ kind:allied
+https://ironboundcc.org/feed/ | Ironbound Community Corporation  # state:NJ kind:allied
+
+# -- National allied-org press feeds (no EJ filter -- keep every item; National & outlets panel) --
+https://www.weact.org/feed/ | WE ACT for Environmental Justice  # state:US kind:allied
+https://www.sbclt.org/feed/ | South Baltimore Community Land Trust  # state:MD kind:allied
+
+# -- Pitch outlets (beat outlets; keep a story if it matches core EJ terms OR nj_local_terms -- a strict
+# EJ-only filter empties these. Rows get a "pitches" marker. National & outlets panel.) --
+https://grist.org/feed/ | Grist  # kind:pitch
+https://insideclimatenews.org/feed/ | Inside Climate News  # kind:pitch
+https://capitalbnews.org/feed/ | Capital B News  # kind:pitch
+https://prismreports.org/feed/ | Prism Reports  # kind:pitch
+https://www.yesmagazine.org/feed | Yes! Magazine  # kind:pitch
+https://atmos.earth/feed/ | Atmos  # kind:pitch
+https://scalawagmagazine.org/feed/ | Scalawag  # kind:pitch
+https://undark.org/feed/ | Undark  # kind:pitch
+https://capitalandmain.com/feed | Capital & Main  # kind:pitch
+https://www.hcn.org/feed | High Country News  # kind:pitch
+# sierraclub.org/sierra/feed | Sierra -- DISABLED 2026-10-26: the feed 302-redirects to itself
+# (https://www.sierraclub.org/sierra/feed -> https://www.sierraclub.org/sierra/feed), a bot-block loop,
+# not a real feed location. Confirmed with curl -I from this sandbox; retest from the Actions runner
+# before re-enabling.
+https://civileats.com/feed/ | Civil Eats  # kind:pitch
+
+# -- Google News search RSS (keyless). Only NJ-scoped queries kept -- the three broad national queries
+# (environmental justice / environmental racism / cumulative impacts law, no state qualifier) were
+# removed 2026-10-26: they fed a panel ("National News") that no longer exists in this form; National &
+# outlets is now defined as pitch outlets + national allied orgs + Baltimore/MD hyperlocal only. --
 https://news.google.com/news/rss/search?q=%22environmental+justice%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: EJ New Jersey  # state:NJ
 https://news.google.com/news/rss/search?q=%22overburdened+community%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: overburdened community NJ  # state:NJ
 https://news.google.com/news/rss/search?q=%22cumulative+impacts%22+NJDEP&hl=en-US&gl=US&ceid=US:en | GN: cumulative impacts NJDEP  # state:NJ
-https://news.google.com/news/rss/search?q=%22environmental+justice%22&hl=en-US&gl=US&ceid=US:en | GN: environmental justice (national)
-https://news.google.com/news/rss/search?q=%22environmental+racism%22&hl=en-US&gl=US&ceid=US:en | GN: environmental racism (national)
-https://news.google.com/news/rss/search?q=%22cumulative+impacts%22+law&hl=en-US&gl=US&ceid=US:en | GN: cumulative impacts law (national)
+https://news.google.com/news/rss/search?q=NJDEP+permit+community&hl=en-US&gl=US&ceid=US:en | GN: NJDEP permit community  # state:NJ
+https://news.google.com/news/rss/search?q=%22New+Jersey%22+pollution+residents&hl=en-US&gl=US&ceid=US:en | GN: NJ pollution residents  # state:NJ
+https://news.google.com/news/rss/search?q=%22New+Jersey%22+warehouse+residents+trucks&hl=en-US&gl=US&ceid=US:en | GN: NJ warehouse residents  # state:NJ
+
+# -- Hyperlocal Google News queries, one per EJ-hotspot town (round2/hyperlocal_feeds.json). Still run
+# through the standard EJMatcher core-terms pass (the query string already narrows topically; this just
+# catches the odd off-topic "air quality" weather story). NJ towns -> NJ panel; Baltimore/MD -> National
+# & outlets panel (tag MD) per the build brief. --
+https://news.google.com/rss/search?q=%22Ironbound%22+(pollution+OR+%22environmental+justice%22+OR+warehouse+OR+%22air+quality%22)&hl=en-US&gl=US&ceid=US:en | GN: Ironbound/Newark  # state:NJ kind:hyperlocal town:Newark/Ironbound
+https://news.google.com/rss/search?q=Camden+NJ+(pollution+OR+%22environmental+justice%22+OR+incinerator+OR+%22air+quality%22)&hl=en-US&gl=US&ceid=US:en | GN: Camden  # state:NJ kind:hyperlocal town:Camden
+https://news.google.com/rss/search?q=Paterson+NJ+(pollution+OR+%22environmental+justice%22+OR+%22air+quality%22+OR+contamination)&hl=en-US&gl=US&ceid=US:en | GN: Paterson  # state:NJ kind:hyperlocal town:Paterson
+https://news.google.com/rss/search?q=Elizabeth+NJ+(pollution+OR+%22environmental+justice%22+OR+warehouse+OR+%22air+quality%22+OR+port)&hl=en-US&gl=US&ceid=US:en | GN: Elizabeth  # state:NJ kind:hyperlocal town:Elizabeth
+https://news.google.com/rss/search?q=Linden+NJ+(pollution+OR+%22environmental+justice%22+OR+refinery+OR+%22air+quality%22)&hl=en-US&gl=US&ceid=US:en | GN: Linden  # state:NJ kind:hyperlocal town:Linden
+https://news.google.com/rss/search?q=%22Perth+Amboy%22+(pollution+OR+%22environmental+justice%22+OR+%22air+quality%22+OR+contamination)&hl=en-US&gl=US&ceid=US:en | GN: Perth Amboy  # state:NJ kind:hyperlocal town:Perth Amboy
+https://news.google.com/rss/search?q=Trenton+NJ+(pollution+OR+%22environmental+justice%22+OR+%22air+quality%22+OR+incinerator)&hl=en-US&gl=US&ceid=US:en | GN: Trenton  # state:NJ kind:hyperlocal town:Trenton
+https://news.google.com/rss/search?q=%22Curtis+Bay%22+Baltimore+(pollution+OR+%22environmental+justice%22+OR+coal+OR+%22air+quality%22)&hl=en-US&gl=US&ceid=US:en | GN: Curtis Bay/Baltimore  # state:MD kind:hyperlocal town:Curtis Bay/Baltimore
