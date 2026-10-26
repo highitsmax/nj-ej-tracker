@@ -1,5 +1,18 @@
 [
  {
+  "id": "1c2e4667e6d7c772",
+  "date": "2026-10-26",
+  "title": "Climate change rarely goes on trial. This one could be a landmark.",
+  "url": "https://grist.org/climate/climate-change-rarely-goes-on-trial-this-one-could-be-a-landmark/",
+  "kind": null,
+  "source": "Grist",
+  "tags": [
+   "nj-local:emissions"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "7e039feedb54e05b",
   "date": "2026-10-24",
   "title": "For Black voters, climate action means little without relief from rising costs",
@@ -8,21 +21,6 @@
   "source": "Grist",
   "tags": [
    "nj-local:pollution"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "cd4d53a778abdcd7",
-  "date": "2026-10-23",
-  "title": "PFAS Contamination in Drinking Water May Be Underestimated, New Study Suggests",
-  "url": "https://insideclimatenews.org/news/23102026/pfas-contamination-in-drinking-water-may-be-underestimated-new-study-suggests/",
-  "kind": null,
-  "source": "Inside Climate News",
-  "tags": [
-   "nj-local:PFAS",
-   "nj-local:Contamination",
-   "nj-local:PFAS"
   ],
   "state": "US",
   "pitch": true
@@ -49,33 +47,6 @@
   "source": "Capital B News",
   "tags": [
    "nj-local:pollution"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "a4445e5f761a405f",
-  "date": "2026-10-20",
-  "title": "USDA Will Pay Farmers $8 Billion to Make Up for High Diesel Prices",
-  "url": "https://civileats.com/2026/10/20/usda-will-pay-farmers-8-billion-to-make-up-for-high-diesel-prices/",
-  "kind": null,
-  "source": "Civil Eats",
-  "tags": [
-   "nj-local:Diesel"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "99d7e69b0e41b951",
-  "date": "2026-10-16",
-  "title": "Long after the Maui fires, toxic metals linger in residents’ bodies",
-  "url": "https://grist.org/indigenous/long-after-the-maui-fires-toxic-metals-linger-in-residents-bodies/",
-  "kind": null,
-  "source": "Grist",
-  "tags": [
-   "nj-local:toxic",
-   "nj-local:toxic"
   ],
   "state": "US",
   "pitch": true
