@@ -1,0 +1,8 @@
+{
+  "_note": "Outlets that usually sit behind a paywall or meter. Matched case-insensitively against a story's source/outlet name. Edit freely. Stories from these get a 'paywall' marker and a 'free coverage' link (a Google News search for the headline).",
+  "outlets": ["NJ.com", "Star-Ledger", "Bloomberg Law", "Bloomberg", "Law360", "Baltimore Banner", "Baltimore Sun",
+              "New York Times", "NYTimes", "Washington Post", "Wall Street Journal", "WSJ", "E&E News", "Politico Pro",
+              "Financial Times", "Philadelphia Inquirer", "Inquirer", "Asbury Park Press", "NorthJersey.com", "The Record",
+              "Courier-Post", "Daily Record", "MyCentralJersey", "Press of Atlantic City", "The Atlantic", "Newsday",
+              "Boston Globe", "Los Angeles Times", "The Economist", "Reuters Legal", "Business Insider"]
+}

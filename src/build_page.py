@@ -10,6 +10,8 @@ under the stats strip. Tone rule: opportunities and signal only -- no tutorial c
 paragraphs, plain labels.
 """
 import html
+import json
+import urllib.parse
 import os
 import sys
 from datetime import datetime, timedelta, timezone
@@ -50,6 +52,20 @@ def days_left(deadline):
     return 'today' if d == 0 else f'{d}d'
 
 
+_PW = None
+
+
+def paywalled(source):
+    global _PW
+    if _PW is None:
+        try:
+            _PW = [o.lower() for o in json.load(open(os.path.join(ROOT, 'config', 'paywalled.json')))['outlets']]
+        except Exception:
+            _PW = []
+    s = (source or '').lower()
+    return any(o in s for o in _PW)
+
+
 def fmt_row(r, show_kind=False):
     date = esc(nice_date(r.get('date')))
     title = esc(r.get('title') or '')
@@ -63,11 +79,16 @@ def fmt_row(r, show_kind=False):
         markers += f'<b class="town">{esc(r["town"])}</b> · '
     if r.get('pitch'):
         markers += '<b class="pitchmark">pitches</b> · '
+    free = ''
+    if paywalled(r.get('source')) and r.get('kind') in (None, 'news'):
+        q = urllib.parse.quote_plus(f'"{(r.get("title") or "")[:120]}"')
+        free = (f' &middot; <span class="pw">paywall</span> &middot; <a class="free" href="https://news.google.com/search?q={q}" '
+                f'target="_blank" rel="noopener">free coverage</a>')
     kind_tag = ''
     if show_kind and r.get('kind') and KIND_LABEL.get(r['kind']):
         kind_tag = f'<span class="kindtag">{esc(KIND_LABEL[r["kind"]])}</span>'
     return (f'<li><span class="dt">{date}</span>{kind_tag}<a href="{url}" target="_blank" rel="noopener">{title}</a>'
-            f'<span class="meta">{markers}{st and f"<b>{st}</b> &middot; "}{source}{due and " &middot; "}{due}</span></li>')
+            f'<span class="meta">{markers}{st and f"<b>{st}</b> &middot; "}{source}{free}{due and " &middot; "}{due}</span></li>')
 
 
 def panel_html(label, rows, note='', empty_msg='Nothing open right now.', cls=''):
@@ -180,6 +201,8 @@ header .upd { margin-left: auto; color: #e7cdb8; font-size: 11.5px; }
 .stats span { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: .5px; }
 .newbar { background: #f8efe4; border-bottom: 1px solid var(--rule); padding: 6px 18px; font-size: 11.5px;
           color: var(--ink); white-space: normal; line-height: 1.5; }
+.pw { color: var(--muted); font-style: italic; }
+.meta a.free { color: var(--terra-d); font-weight: 400; text-decoration: underline; }
 .newbar a { color: var(--ink); } .newbar a:hover { color: var(--terra-d); }
 .newbar .newlabel { color: var(--brown); text-transform: uppercase; letter-spacing: .4px; font-size: 10.5px; margin-right: 4px; }
 main { flex: 1; min-height: 0; display: grid; gap: 10px; padding: 10px;
