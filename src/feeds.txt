@@ -1,0 +1,32 @@
+# NJ EJ Tracker news feeds. One per line: URL | label. Every feed is filtered through the EJ keyword
+# rules in ej_terms.json (src/common.py EJMatcher) -- there is no "[filter]"/unfiltered distinction here;
+# even EJ-dedicated orgs post plenty of non-EJ stories, so everything gets the same keyword gate.
+
+# -- National/EJ-focused (VALID-XML 2026-10-25) --
+https://insideclimatenews.org/feed/ | Inside Climate News
+https://grist.org/feed/ | Grist
+https://www.propublica.org/feeds/propublica/main | ProPublica
+https://www.theguardian.com/environment/rss | The Guardian: Environment
+https://www.theguardian.com/environment/pollution/rss | The Guardian: Pollution
+https://publicintegrity.org/feed/ | Center for Public Integrity
+https://www.desmog.com/feed/ | DeSmog
+https://capitalandmain.com/feed | Capital & Main
+https://www.hcn.org/feed | High Country News
+https://earthjustice.org/feed | Earthjustice
+https://chej.org/feed/ | Center for Health, Environment & Justice
+https://checksandbalancesproject.org/feed/ | Checks and Balances Project
+https://capitalbnews.org/feed/ | Capital B News
+https://www.ehn.org/feeds/feed.rss | Environmental Health News
+https://www.canarymedia.com/rss.rss | Canary Media
+
+# -- NJ outlets (general outlets, EJ keyword filter applies to all) --
+# Trailing "  # state:XX" tags the feed's state (news.py reads this; config/states.json lists the codes this
+# tracker knows about). Everything else defaults to US (federal/national) per the build brief.
+https://www.njspotlightnews.org/feed/ | NJ Spotlight News  # state:NJ
+https://newjerseymonitor.com/feed/ | New Jersey Monitor  # state:NJ
+https://www.insidernj.com/feed/ | InsiderNJ  # state:NJ
+
+# -- Google News search RSS (keyless) --
+https://news.google.com/news/rss/search?q=%22environmental+justice%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: EJ New Jersey  # state:NJ
+https://news.google.com/news/rss/search?q=%22overburdened+community%22+%22New+Jersey%22&hl=en-US&gl=US&ceid=US:en | GN: overburdened community NJ  # state:NJ
+https://news.google.com/news/rss/search?q=%22cumulative+impacts%22+NJDEP&hl=en-US&gl=US&ceid=US:en | GN: cumulative impacts NJDEP  # state:NJ

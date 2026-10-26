@@ -1,0 +1,25 @@
+{
+  "_note": "EJ keyword rules, shared by news.py and bills.py. Plain rules, no AI. Case-insensitive whole-word match; a trailing * = stem.Seeded with the NJ statute's own vocabulary (N.J.S.A. 13:1D-157) added.",
+
+  "core_terms": [
+    "environmental justice", "cumulative impact*", "overburdened communit*", "disadvantaged communit*",
+    "fenceline communit*", "frontline communit*", "climate justice", "disproportionate*",
+    "pollution burden*", "cumulative risk", "legacy pollution", "redlin*", "environmental racism",
+    "sacrifice zone*", "EJSCREEN", "environmental health disparit*", "clean and healthy environment",
+    "co-pollutant*"
+  ],
+  "_why_core_terms": "These count ALONE -- each is specific enough that it isn't noise (unlike bare 'environment*' or 'pollution', which the research doc flagged as too broad to use unqualified). 'cumulative impact*' and 'overburdened communit*' are the NJ statute's own terms (N.J.S.A. 13:1D-157/161); 'fenceline communit*' is Virginia's.",
+
+  "siting_nouns": [
+    "highway", "interstate", "landfill", "incinerator", "refinery", "rail yard", "warehouse",
+    "distribution center", "power plant", "compressor station", "siting", "permit"
+  ],
+  "_why_siting_nouns": "Generic by themselves (every warehouse zoning fight uses 'permit'). They only add a tag when a core_term is ALSO present in the same story -- the combination rule the research doc called for, so a bare highway-widening story never counts as EJ on its own. See EJMatcher.match() in src/common.py.",
+
+  "exclude_phrases": [
+    "environmental review fee", "environmental impact fee", "environmental education", "clean water fund"
+  ],
+  "_why_exclude_phrases": "Stripped from the text before matching, so a generic development-fee or education-grant story can't be the reason something counts as EJ. None of these appear in core_terms anyway (the research doc's bigger worry -- bare 'environment*' -- is handled by never including it as a core term), but kept as a belt-and-suspenders per the research doc's explicit ask.",
+
+  "nj_statute_cite": "N.J.S.A. 13:1D-157 to -161 (NJ's EJ permitting law); NJDEP's overburdened-community definition (35% low-income / 40% minority-or-tribal / 40% limited-English-proficiency census block group) is MEDIUM confidence per the research doc -- not re-verified against the primary NJDEP PDF. Not used as a numeric filter here, only as background."
+}

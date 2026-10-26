@@ -1,0 +1,64 @@
+[
+ {
+  "id": "1ad9d4fad6160875",
+  "date": "2026-10-22",
+  "title": "A5692: RE-PLAN Act-concerns assessment for land, developable for affordable housing",
+  "url": "https://www.njleg.state.nj.us/bill-search/2026/A5692",
+  "source": "NJ Legislature",
+  "deadline": null,
+  "tags": [
+   "cumulative impact"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "33f08a595e5b34e6",
+  "date": "2026-09-14",
+  "title": "S1757 Sca (1R): Clean Energy Equity Office-estab; direct programs for overburdened communities",
+  "url": "https://www.njleg.state.nj.us/bill-search/2026/S1757 Sca (1R)",
+  "source": "NJ Legislature",
+  "deadline": null,
+  "tags": [
+   "overburdened communit"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "6ce10d0591a5c80a",
+  "date": "2026-05-15",
+  "title": "A4892: Clean Energy Equity Office-estab; direct programs for overburdened communities",
+  "url": "https://www.njleg.state.nj.us/bill-search/2026/A4892",
+  "source": "NJ Legislature",
+  "deadline": null,
+  "tags": [
+   "overburdened communit"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "6574f9ba289c3c23",
+  "date": "2026-02-13",
+  "title": "A4035: Stormwater impact-req to evaluate cumulative impact, applications w/ warehouses",
+  "url": "https://www.njleg.state.nj.us/bill-search/2026/A4035",
+  "source": "NJ Legislature",
+  "deadline": null,
+  "tags": [
+   "cumulative impact",
+   "siting:warehouse"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "9705642678e05d3d",
+  "date": "2025-12-22",
+  "title": "S1232: Stormwater impact-req to evaluate cumulative impact, applications w/ warehouses",
+  "url": "https://www.njleg.state.nj.us/bill-search/2026/S1232",
+  "source": "NJ Legislature",
+  "deadline": null,
+  "tags": [
+   "cumulative impact",
+   "siting:warehouse"
+  ],
+  "state": "NJ"
+ }
+]

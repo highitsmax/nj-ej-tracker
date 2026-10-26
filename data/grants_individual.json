@@ -1,0 +1,30 @@
+[
+ {
+  "id": "fellowship-switzer",
+  "date": "2026-10-25",
+  "title": "Switzer Environmental Fellowship -- $18,000 unrestricted award (VERIFY: figure is secondary-source, not re-confirmed on switzernetwork.org)",
+  "url": "https://switzernetwork.org/",
+  "source": "Switzer Foundation (hand-kept, not pulled live)",
+  "deadline": "2026-12-14",
+  "tags": [
+   "individual",
+   "graduate-students",
+   "verify"
+  ],
+  "state": "US"
+ },
+ {
+  "id": "fellowship-agents-of-change",
+  "date": "2026-10-25",
+  "title": "Agents of Change in Environmental Justice Fellowship -- $3,000 honorarium (VERIFY: figure is secondary-source, not re-confirmed on the program's own site)",
+  "url": "https://www.agentsofchangeinej.org/",
+  "source": "Agents of Change in EJ (hand-kept, not pulled live)",
+  "deadline": null,
+  "tags": [
+   "individual",
+   "early-career",
+   "verify"
+  ],
+  "state": "US"
+ }
+]

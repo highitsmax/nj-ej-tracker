@@ -1,0 +1,82 @@
+name: Update tracker
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run streams (stdlib only; each stream keeps its last good data if it fails)
+        env:
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          REGS_API_KEY: ${{ secrets.REGS_API_KEY }}
+          LEGISCAN_API_KEY: ${{ secrets.LEGISCAN_API_KEY }}
+        run: |
+          python3 src/news.py
+          python3 src/bills.py
+          python3 src/comments.py
+          python3 src/grants.py
+          python3 src/jobs.py
+          python3 src/congress.py
+
+      - name: Build the page (unencrypted, local only)
+        run: python3 src/build_page.py
+
+      - name: Commit data back to the repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "auto: refresh tracker data [skip ci]"
+          git push
+
+      - name: Set up Node (StatiCrypt only)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Encrypt the page with StatiCrypt
+        env:
+          STATICRYPT_PASSWORD: ${{ secrets.PAGE_PIN }}
+        run: |
+          if [ -z "$STATICRYPT_PASSWORD" ]; then
+            echo "::error::PAGE_PIN secret is not set. Refusing to deploy an unencrypted page."
+            exit 1
+          fi
+          # Version pinned to 3.5.4: flags checked live with `npx staticrypt@3.5.4 --help` during this build.
+          npx --yes staticrypt@3.5.4 build/index.html \
+            --remember 30 \
+            --template-title "NJ EJ Tracker" \
+            --short \
+            -d public
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
