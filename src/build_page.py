@@ -156,11 +156,11 @@ def alert_line():
 
 
 def njdep_line():
-    probe = load_json(os.path.join(DATA_DIR, 'njdep_probe.json'), {})
-    if probe.get('incapsula') or probe.get('http_code') != 200:
-        return ('<p class="njdeplink"><a href="https://dep.nj.gov/ej/meetings/" target="_blank" '
-                'rel="noopener">NJDEP EJ hearings calendar</a></p>')
-    return ''
+    """v3 (2026-10-26): Feature A (a live NJDEP hearings probe/parser) dropped -- dep.nj.gov sits behind an
+    Incapsula/Imperva WAF that blocks plain scripted requests, and this project does not try to get past bot
+    protection. The plain link line stays unconditionally so a person can still open the real calendar."""
+    return ('<p class="njdeplink"><a href="https://dep.nj.gov/ej/meetings/" target="_blank" '
+            'rel="noopener">NJDEP EJ hearings calendar</a></p>')
 
 
 def new_since_yesterday(panel_buckets):
@@ -274,10 +274,12 @@ def build():
     jobs, jobs_st = load_panel('jobs')
     outlets, outlets_st = load_panel('outlets')
     pitch_calls, pitch_calls_st = load_panel('pitch_calls')
+    hearings, hearings_st = load_panel('nj_committees')
 
     bills_all = bills_nj + bills_leg
     grants_all = grants_org + funders
-    all_rows = nj + national + bills_all + comments + grants_all + fellowships + jobs + outlets + pitch_calls
+    hearings_sorted = sorted(hearings, key=lambda r: r.get('date') or '')
+    all_rows = nj + national + bills_all + comments + grants_all + fellowships + jobs + outlets + pitch_calls + hearings
 
     # -- New Jersey --
     nj_html = panel_html('New Jersey', nj, note=stale_note(nj_st), cls='nj')
@@ -295,10 +297,11 @@ def build():
                  f'{sub("Fellowships", fellowships)}'
                  f'{sub("Grants -- organizations", grants_all)}</div></section>')
 
-    # -- Weigh in (Comment periods / Bills) + NJDEP hearings link if blocked --
-    n_weighin = len(comments) + len(bills_all)
+    # -- Weigh in (Hearings / Comment periods / Bills) + NJDEP hearings link line --
+    n_weighin = len(hearings_sorted) + len(comments) + len(bills_all)
     weighin_html = (f'<section class="p weighin"><div class="ph"><span>Weigh in</span><span class="n">{n_weighin}</span></div>'
-                     f'<div class="stack">{sub("Comment periods", comments)}'
+                     f'<div class="stack">{sub("Hearings", hearings_sorted)}'
+                     f'{sub("Comment periods", comments)}'
                      f'{sub("Bills", bills_all)}</div>{njdep_line()}</section>')
 
     # -- Pitch & publish (outlets / pitch calls) --
@@ -315,7 +318,7 @@ def build():
 
     newbar = new_since_yesterday({
         'New Jersey': nj, 'National & outlets': national, 'Deadlines': due_rows,
-        'Opportunities': jobs + fellowships + grants_all, 'Weigh in': comments + bills_all,
+        'Opportunities': jobs + fellowships + grants_all, 'Weigh in': comments + bills_all + hearings_sorted,
         'Pitch & publish': outlets + pitch_calls,
     })
 

@@ -47,10 +47,7 @@ jobs:
           python3 src/outlets.py
           python3 src/alerts.py
           python3 src/congress.py
-
-      - name: NJDEP hearings probe (informational only -- dep.nj.gov is WAF-walled; never fails the run)
-        continue-on-error: true
-        run: python3 src/njdep_probe.py
+          python3 src/nj_committees.py
 
       - name: Build the page (unencrypted, local only)
         run: python3 src/build_page.py
