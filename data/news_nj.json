@@ -125,19 +125,6 @@
   "state": "NJ"
  },
  {
-  "id": "e88b3421900b7b00",
-  "date": "2026-08-27",
-  "title": "North Brunswick residents fought a 300,000-square-foot warehouse. They won.",
-  "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hNUM5VllqcUR3aER6bkZseGFiZllWbGl2T0M1Qzc1S0pjckxZWU5UOThkSkRPVGtNNUY3MzVsUjVOS1pmRW1Zdk1aT2dVaUJlbURmVUM0dWJoalZrenhZbzlGbzhkQUE4dVh3?oc=5",
-  "kind": null,
-  "source": "New Jersey 101.5",
-  "tags": [
-   "nj:warehouse",
-   "nj:warehouse"
-  ],
-  "state": "NJ"
- },
- {
   "id": "f974b130d4a1dd8a",
   "date": "2026-08-26",
   "title": "Former NJDEP Chief LaTourette Now Works With EMR on its Environmental Issues",
@@ -301,32 +288,6 @@
   "state": "NJ"
  },
  {
-  "id": "ced119089b3b976b",
-  "date": "2026-06-08",
-  "title": "“Climate Superfund Act” – Senate Bill No. 2338",
-  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ReW0xR0RaV0FGYnlZcWdfNU85VWJZbE1SYnZDQ1QtdWRSOFJVUXVGYWtkWEZlN3d3RlhYTHh2dHRmRmgzYkstR291U1ZVWUo5SFdSYm9NX2E2YkpXQ1RxQnUwem1DT082c01YRG92MV9LaHNhNnFqdnBtNXQ?oc=5",
-  "kind": null,
-  "source": "New Jersey Business & Industry Association",
-  "tags": [
-   "nj:Superfund",
-   "nj:Superfund"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "267e1cbb60df9321",
-  "date": "2026-06-04",
-  "title": "Faith leaders across New Jersey urge lawmakers to pass \"Polluters Pay\" Climate Superfund Act",
-  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWkI5dXl0UjlySUFEdmFtVzFERG91OVBJbjlyVUVIYjBvaXEzanFoY21sZWlkeGxWVHcwb01YUVVYRVNVMzJVSEsxMUx4Ty1pQXYyenQtU1NSM3Vna1dRcGVFTFVYcnNjd1E3LVowXzU4OUtTc01sNnMxTnQzM0RpbmJLZDdQWWVLSjhfQ2lLRVktWWxpeXJhd0ZDajlMQW9VaVlhZkJhYjVCc054a1gwVElCQ2dfc0g3VlVTYW4wWlJlQXppQ1hyRzRuVQ?oc=5",
-  "kind": null,
-  "source": "The Jersey Vindicator",
-  "tags": [
-   "nj:Superfund",
-   "nj:Superfund"
-  ],
-  "state": "NJ"
- },
- {
   "id": "2335837b8c972713",
   "date": "2026-06-01",
   "title": "NJEJA Set of Comments on BPU Modernization",
@@ -409,19 +370,6 @@
   "source": "NJIT News",
   "tags": [
    "environmental justice"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "dfee57810b1bffe4",
-  "date": "2026-05-03",
-  "title": "Dangerous warehouse fire consumes entire block in Belleville, New Jersey; families evacuated",
-  "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTDg1R1Zaak9zZE0yVHhRbzV5V0Zia1lxV1drZmdDRkxkT1V0MzJLZDVCLU1RSXFTTlpLbjBqbnpzNnJ0TWItYVRWVTBDYUNtMzBkZ1RGYzRzR01sZndBN0Y3TkNjWkRCbDRTTk53T0tUcUxqd0hLZzMxOEVFSHNnM1NFNG5RU041anRrVDlCakRTRHNKc3hYX1VNSkp5YWfSAaQBQVVfeXFMT3E1UVluazlwUHh3TXo1N2U5NHVTek01eGN6OWZlRVlpRUNjYzUtMDIyeWQyRUVFSTN3UVpNYUV1dFpxMHdTUGxDNEx2OWU2NGYxa09oMUJScGpCNDV3TnZBNXNEOTVETElNT0NuQXBET29LVkhTbVI1TllLcVBFOFVERTRKTHBtSmZPR0FxVDNZOEd0cm53YXU2ekRwZUdHMzhSVmw?oc=5",
-  "kind": null,
-  "source": "ABC7 New York",
-  "tags": [
-   "nj:warehouse",
-   "nj:warehouse"
   ],
   "state": "NJ"
  },
@@ -622,6 +570,55 @@
   "source": "NJEJA",
   "tags": [
    "allied"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "ac09f54d2ecaa85b",
+  "date": "2026-01-17",
+  "title": "Camden Incinerator Permit Renewal Process Underscores Limits of Regulation, Lack of Alternatives, Community Health Concerns",
+  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZy1MY0xJVmtTeFJaY3JxYWY3ek5HNUdjaEdiMzh4WnRMQkllNDR0VmhDa1A1MGdzMjRqODduV3lMMUZXWUVyV1c0ajgxdzRjdG5OMDNpQlBsdWxWMk9XWmFNOUtNTWxDQWhmZHB2aEdfQnI0TDY0cERDMG9NMGdkU2tUVVdTcG5WdEltYXVKZzlBTlNYVDhTQUlDR0M1SmJweE1LSGNkMXNxVzhNLVFCa1BOaTBxVS1PTFFPcDNXSVl1b0RFSno4eS1wbW5CV0VHc2FhZjNoWVd2Z3Ri?oc=5",
+  "kind": null,
+  "source": "NJ PEN",
+  "tags": [
+   "nj:Incinerator",
+   "nj:Incinerator"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "f02be5dffc355bd9",
+  "date": "2026-01-07",
+  "title": "New Jersey court upholds key environmental justice law",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNenUwVWVsbVlDaHJGU2NPa0lkRlZwVGhiYmRuN2piYU1pV29ITm82TG5aSGhnamFFajdiMHFBLUVMTk1pSGhtWDZXcE1oUXVobXhzM3hscVdhcjgzUUFWRWU1ZmJvaE5QSmxSS3pfdkEzWEJFMDFoVl9aRVlKdHhobFdlM0R4b3RYVjExcVE3ZXllMzItV09GUkNUZ2U?oc=5",
+  "kind": null,
+  "source": "Waste Dive",
+  "tags": [
+   "environmental justice"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "92e28e8db5513250",
+  "date": "2026-01-06",
+  "title": "Court upholds New Jersey’s landmark environmental justice rule",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM2t5T0xSMXBnOVJ2M3BXZ3FJakY2LWlqSkpSYlhlRG9fa3pyRWZLWVFqOVFGeWktZmVRVWVKWXpUUEpnRHJZbWI4Qm8xSDRjTlBSdUF0UmdYcGp6bFpMSmY0N013a25yMTJQU01BNWFDUUthTHhQQmFvcUdKY2NrMWFxczJhaUhmdUFyUGR5T3lqSktZaTA5ZVJzeHk?oc=5",
+  "kind": null,
+  "source": "E&E News by POLITICO",
+  "tags": [
+   "environmental justice"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "f0ce15da3aa53e5c",
+  "date": "2026-01-06",
+  "title": "NJ Spotlight News | Court upholds NJ's landmark environmental justice rules | Season 2026",
+  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWHZ1ellKZEM3VXBWTmFyLUtiUXhMTnJqc0ZMaDhEdWdyNnBRUER1QzVyYUNuVml4SU5NMWh0SnM4emFGV0FUWmpqb2VVVVFnajNydGY5Z0xUZ29FVGoyQU5VSElWYnVNa0FjZExSb1lNek5IVDdJaFBhdTJQWGo5anVlYlJWSDdFcFpORmRXZGc2ZUp6VFZuSU9LWkVZNVVRTmxCSnhHb18wU0ZCQ1ltLWlxVDA?oc=5",
+  "kind": null,
+  "source": "PBS",
+  "tags": [
+   "environmental justice"
   ],
   "state": "NJ"
  }
