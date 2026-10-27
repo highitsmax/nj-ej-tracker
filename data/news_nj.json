@@ -1,18 +1,5 @@
 [
  {
-  "id": "34f3c3f2fc1ce706",
-  "date": "2026-10-16",
-  "title": "This huge N.J. data center wants to run 12 diesel generators — and residents are pushing back",
-  "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbzFUUWlKZDVHRlBOZ3Bzd01sbVBKNE1GTmFpS2NJc2hNYlNFS1NJYWNtRW9yWjd2TXloQTdXU0NqTndzLU9BWmVLT3ZCYVhrYVZ5UkhocDdsUTZqbVgtb1Bvci1obUZLUmNtaWNuN0JtblJ2aWQwSFVKWm9FUDdGQzVqMVhqNHQzYUMtLWMzbndfQ1pWTnJhRm81T2VmNVFtUHZXNlV3ZEpCT3ZvZmU1aEVNSmZjUnktVEpPU2cxTElXWEdSSDRvMUF3?oc=5",
-  "kind": null,
-  "source": "NJ.com",
-  "tags": [
-   "nj:diesel",
-   "nj:diesel"
-  ],
-  "state": "NJ"
- },
- {
   "id": "b44d820191ecbf6a",
   "date": "2026-10-07",
   "title": "NJDEP Gives Public More Time To Weigh In On South Brunswick Data Center",
@@ -188,6 +175,19 @@
   "state": "NJ"
  },
  {
+  "id": "a638b370872a14b2",
+  "date": "2026-08-12",
+  "title": "New Jersey to test soil beyond landfill in ‘cancer cluster’ town",
+  "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUlFXY1ppZEpDYl9HcExXU29GQUhpYW5zYXpIOUlDdjJGcF9EOXI5YVNfWU1sX1RyejA0MnIyQzlzdVU5Y2lCMkdGYWlLdzZ0UkZrZ2JhMWFkRTE3U2tJbVJpSUlaRE5VZ2ZvLTJ6cnNuOHhRUEpkMEdfSnFqTUU2VF9MZUtURW54bkw2c2Rla1djYVpCb0pOSkhCOTdYUVlXUWFV0gGoAUFVX3lxTFA3MWRaWWdkckxtMlVTbXZtUzFNb3lGS21FWGg5QUpRUWFtQjdtMG9JdTFvN3k0dHhhNHB1dTljNURRZ3pacGk5cldyOTFva01KRmxWelFnT3pCNEg4eUZRRS1vdUhWSU5YSHd3a25faEhtQ2NMNy14NnY0TmFRazU1NG8zQzFKUnpmOWlYR2tVS2hKTWl1bGR1ZmlmVWJlTDNUaG9VajBSag?oc=5",
+  "kind": null,
+  "source": "NewsNation",
+  "tags": [
+   "nj:landfill",
+   "nj:landfill"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "e2c01dad91238ef0",
   "date": "2026-08-06",
   "title": "Is NJDEP fulfilling its mandate to protect New Jersey? No. | Opinion",
@@ -297,6 +297,32 @@
   "tags": [
    "nj:pollution",
    "nj:pollution"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "ced119089b3b976b",
+  "date": "2026-06-08",
+  "title": "“Climate Superfund Act” – Senate Bill No. 2338",
+  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ReW0xR0RaV0FGYnlZcWdfNU85VWJZbE1SYnZDQ1QtdWRSOFJVUXVGYWtkWEZlN3d3RlhYTHh2dHRmRmgzYkstR291U1ZVWUo5SFdSYm9NX2E2YkpXQ1RxQnUwem1DT082c01YRG92MV9LaHNhNnFqdnBtNXQ?oc=5",
+  "kind": null,
+  "source": "New Jersey Business & Industry Association",
+  "tags": [
+   "nj:Superfund",
+   "nj:Superfund"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "267e1cbb60df9321",
+  "date": "2026-06-04",
+  "title": "Faith leaders across New Jersey urge lawmakers to pass \"Polluters Pay\" Climate Superfund Act",
+  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWkI5dXl0UjlySUFEdmFtVzFERG91OVBJbjlyVUVIYjBvaXEzanFoY21sZWlkeGxWVHcwb01YUVVYRVNVMzJVSEsxMUx4Ty1pQXYyenQtU1NSM3Vna1dRcGVFTFVYcnNjd1E3LVowXzU4OUtTc01sNnMxTnQzM0RpbmJLZDdQWWVLSjhfQ2lLRVktWWxpeXJhd0ZDajlMQW9VaVlhZkJhYjVCc054a1gwVElCQ2dfc0g3VlVTYW4wWlJlQXppQ1hyRzRuVQ?oc=5",
+  "kind": null,
+  "source": "The Jersey Vindicator",
+  "tags": [
+   "nj:Superfund",
+   "nj:Superfund"
   ],
   "state": "NJ"
  },
@@ -596,31 +622,6 @@
   "source": "NJEJA",
   "tags": [
    "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "ac09f54d2ecaa85b",
-  "date": "2026-01-17",
-  "title": "Camden Incinerator Permit Renewal Process Underscores Limits of Regulation, Lack of Alternatives, Community Health Concerns",
-  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZy1MY0xJVmtTeFJaY3JxYWY3ek5HNUdjaEdiMzh4WnRMQkllNDR0VmhDa1A1MGdzMjRqODduV3lMMUZXWUVyV1c0ajgxdzRjdG5OMDNpQlBsdWxWMk9XWmFNOUtNTWxDQWhmZHB2aEdfQnI0TDY0cERDMG9NMGdkU2tUVVdTcG5WdEltYXVKZzlBTlNYVDhTQUlDR0M1SmJweE1LSGNkMXNxVzhNLVFCa1BOaTBxVS1PTFFPcDNXSVl1b0RFSno4eS1wbW5CV0VHc2FhZjNoWVd2Z3Ri?oc=5",
-  "kind": null,
-  "source": "NJ PEN",
-  "tags": [
-   "nj:Incinerator",
-   "nj:Incinerator"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "f02be5dffc355bd9",
-  "date": "2026-01-07",
-  "title": "New Jersey court upholds key environmental justice law",
-  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNenUwVWVsbVlDaHJGU2NPa0lkRlZwVGhiYmRuN2piYU1pV29ITm82TG5aSGhnamFFajdiMHFBLUVMTk1pSGhtWDZXcE1oUXVobXhzM3hscVdhcjgzUUFWRWU1ZmJvaE5QSmxSS3pfdkEzWEJFMDFoVl9aRVlKdHhobFdlM0R4b3RYVjExcVE3ZXllMzItV09GUkNUZ2U?oc=5",
-  "kind": null,
-  "source": "Waste Dive",
-  "tags": [
-   "environmental justice"
   ],
   "state": "NJ"
  }
