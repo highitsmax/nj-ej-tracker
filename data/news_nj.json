@@ -1,11 +1,24 @@
 [
  {
-  "id": "10b5715b76c0b457",
-  "date": "2026-10-30",
-  "title": "NJDEP| News Releases | [Title Goes Here] (26/P054)",
-  "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5LWThxNVJYZk8zUXVJaTlkbk8ta2xuZUFpZGd0ajZLanN6ZENTbmRZN1pTZjV4dC1xalQ0WVUxSDhFR2JvcUlSeS1jTQ?oc=5",
+  "id": "34f3c3f2fc1ce706",
+  "date": "2026-10-16",
+  "title": "This huge N.J. data center wants to run 12 diesel generators — and residents are pushing back",
+  "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbzFUUWlKZDVHRlBOZ3Bzd01sbVBKNE1GTmFpS2NJc2hNYlNFS1NJYWNtRW9yWjd2TXloQTdXU0NqTndzLU9BWmVLT3ZCYVhrYVZ5UkhocDdsUTZqbVgtb1Bvci1obUZLUmNtaWNuN0JtblJ2aWQwSFVKWm9FUDdGQzVqMVhqNHQzYUMtLWMzbndfQ1pWTnJhRm81T2VmNVFtUHZXNlV3ZEpCT3ZvZmU1aEVNSmZjUnktVEpPU2cxTElXWEdSSDRvMUF3?oc=5",
   "kind": null,
-  "source": "New Jersey Department of Environmental Protection (.gov)",
+  "source": "NJ.com",
+  "tags": [
+   "nj:diesel",
+   "nj:diesel"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "b44d820191ecbf6a",
+  "date": "2026-10-07",
+  "title": "NJDEP Gives Public More Time To Weigh In On South Brunswick Data Center",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT0w2d3E2U245TmpfdEMxS0NVTG1uNFJTM2REUlR5TzkzRDNCRjcxLW5YYWhpN3hIRzRVczJ3a0d0V2tTdThyTW1lRVVCbVhMQk1yNzd0MzFFbGtEaGpLRTI5OHFBcVZqRGlTeDZNVkNGclEzRUJiWlQwcGNFRmNmSzdEb0hRbjlnNmVLWkYwVmJqeHhQMnhmQnp3N09kaGs3MTZsdlI3T1U?oc=5",
+  "kind": null,
+  "source": "Patch",
   "tags": [
    "nj:NJDEP",
    "nj:NJDEP"
@@ -176,6 +189,19 @@
   "state": "NJ"
  },
  {
+  "id": "e2c01dad91238ef0",
+  "date": "2026-08-06",
+  "title": "Is NJDEP fulfilling its mandate to protect New Jersey? No. | Opinion",
+  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOGZObks0SW03SEgxUFZSR1Y0aFJCeWlFQlpJckd2bXhBUVE4MXNJUEZRalNrSXkxRnRUbHNPd0ZTWUI2MmZXRmpTcTBrcFotZVdqcWQ5QzhvN2M2WGFBS3UwQmJNb0NZR01jeXFFZGIyRnM5VFplX2hNVERneFBTbm55bHQ3UmtKbEVRdGF5WjdZU3VYUThVWHFtbHEwZ3JrMFE?oc=5",
+  "kind": null,
+  "source": "Bergen Record",
+  "tags": [
+   "nj:NJDEP",
+   "nj:NJDEP"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "857c46376cf5490b",
   "date": "2026-08-02",
   "title": "Residents Push Back Against Proposed Warehouse In Nutley",
@@ -233,19 +259,6 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "267e1cbb60df9321",
-  "date": "2026-06-04",
-  "title": "Faith leaders across New Jersey urge lawmakers to pass \"Polluters Pay\" Climate Superfund Act",
-  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWkI5dXl0UjlySUFEdmFtVzFERG91OVBJbjlyVUVIYjBvaXEzanFoY21sZWlkeGxWVHcwb01YUVVYRVNVMzJVSEsxMUx4Ty1pQXYyenQtU1NSM3Vna1dRcGVFTFVYcnNjd1E3LVowXzU4OUtTc01sNnMxTnQzM0RpbmJLZDdQWWVLSjhfQ2lLRVktWWxpeXJhd0ZDajlMQW9VaVlhZkJhYjVCc054a1gwVElCQ2dfc0g3VlVTYW4wWlJlQXppQ1hyRzRuVQ?oc=5",
-  "kind": null,
-  "source": "The Jersey Vindicator",
-  "tags": [
-   "nj:Superfund",
-   "nj:Superfund"
   ],
   "state": "NJ"
  },
@@ -310,10 +323,23 @@
   "state": "NJ"
  },
  {
-  "id": "bbdd87b9ee95d7f1",
+  "id": "dfee57810b1bffe4",
+  "date": "2026-05-03",
+  "title": "Dangerous warehouse fire consumes entire block in Belleville, New Jersey; families evacuated",
+  "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTDg1R1Zaak9zZE0yVHhRbzV5V0Zia1lxV1drZmdDRkxkT1V0MzJLZDVCLU1RSXFTTlpLbjBqbnpzNnJ0TWItYVRWVTBDYUNtMzBkZ1RGYzRzR01sZndBN0Y3TkNjWkRCbDRTTk53T0tUcUxqd0hLZzMxOEVFSHNnM1NFNG5RU041anRrVDlCakRTRHNKc3hYX1VNSkp5YWfSAaQBQVVfeXFMT3E1UVluazlwUHh3TXo1N2U5NHVTek01eGN6OWZlRVlpRUNjYzUtMDIyeWQyRUVFSTN3UVpNYUV1dFpxMHdTUGxDNEx2OWU2NGYxa09oMUJScGpCNDV3TnZBNXNEOTVETElNT0NuQXBET29LVkhTbVI1TllLcVBFOFVERTRKTHBtSmZPR0FxVDNZOEd0cm53YXU2ekRwZUdHMzhSVmw?oc=5",
+  "kind": null,
+  "source": "ABC7 New York",
+  "tags": [
+   "nj:warehouse",
+   "nj:warehouse"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "b7bdfd385385abe0",
   "date": "2026-04-30",
-  "title": "Department of Health | News | Update on Keyport Sanitary Landfill at Aeromarine Industrial Park",
-  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2MmVRRnY4THF6UEttcXRra0pONmxOeHlsVFhRS1hhZXVaN2NSTTFqUHVoYWZ2YjRhZF81ekZaX1AyS2RxR1JMelRfXzVxWmZmbFBJT1hFT3BEeHpFTWlYOHFFdDB6UDRkSUt2Wg?oc=5",
+  "title": "News | Update on Keyport Sanitary Landfill at Aeromarine Industrial Park",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9aaTMySFk5VW9KYmlZcDh5M3pQaW5WcTB2YXhTVTJLeFR6Z0JINFItS3NaY3BfNFJzMDdyenlHUVBWbDZxQlNVLWdFdks2RFNCejhJWXBrVlV4NnlocktjRw?oc=5",
   "kind": null,
   "source": "NJ.gov",
   "tags": [
@@ -323,15 +349,15 @@
   "state": "NJ"
  },
  {
-  "id": "5f91580a2da5d6c4",
-  "date": "2026-04-29",
-  "title": "NJDEP| News Releases | DEP Launches Operation Fast to Support Governor Sherrill’s Mission to Deliver More Efficient Government (26/P019)",
-  "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9QQmttN1RoVTAzMDdPV3ZWN0Q5ejlTN3ZFY1pFWEo0aVpaQkpsMmVXTDR3SkVvS2NEdVJMTVVCQkV6bkFkV1d6Qm14Yw?oc=5",
+  "id": "bbdd87b9ee95d7f1",
+  "date": "2026-04-30",
+  "title": "Department of Health | News | Update on Keyport Sanitary Landfill at Aeromarine Industrial Park",
+  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2MmVRRnY4THF6UEttcXRra0pONmxOeHlsVFhRS1hhZXVaN2NSTTFqUHVoYWZ2YjRhZF81ekZaX1AyS2RxR1JMelRfXzVxWmZmbFBJT1hFT3BEeHpFTWlYOHFFdDB6UDRkSUt2Wg?oc=5",
   "kind": null,
-  "source": "New Jersey Department of Environmental Protection (.gov)",
+  "source": "NJ.gov",
   "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
+   "nj:Landfill",
+   "nj:Landfill"
   ],
   "state": "NJ"
  },
@@ -484,15 +510,15 @@
   "state": "NJ"
  },
  {
-  "id": "eddab238fe363660",
-  "date": "2026-01-19",
-  "title": "SHAWN LATOURETTE’S OUT, ED POTOSNAK IS IN AT NJDEP",
-  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbk00Z1gzOUFUb0RtV014LVBQcTZMU0NTck45QzdSYmtDU00wR3NyV0w5UVlSWFFXWGMtaVliVHljR1hacFFxMXVPbGFNc3NUYzR3MFRfVVVjZG1scDZNc1dLNmhWUGNnVTVmSWlsTFhBZWxiRDRxVjZnOTZCbE9LblltOTg?oc=5",
+  "id": "ac09f54d2ecaa85b",
+  "date": "2026-01-17",
+  "title": "Camden Incinerator Permit Renewal Process Underscores Limits of Regulation, Lack of Alternatives, Community Health Concerns",
+  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZy1MY0xJVmtTeFJaY3JxYWY3ek5HNUdjaEdiMzh4WnRMQkllNDR0VmhDa1A1MGdzMjRqODduV3lMMUZXWUVyV1c0ajgxdzRjdG5OMDNpQlBsdWxWMk9XWmFNOUtNTWxDQWhmZHB2aEdfQnI0TDY0cERDMG9NMGdkU2tUVVdTcG5WdEltYXVKZzlBTlNYVDhTQUlDR0M1SmJweE1LSGNkMXNxVzhNLVFCa1BOaTBxVS1PTFFPcDNXSVl1b0RFSno4eS1wbW5CV0VHc2FhZjNoWVd2Z3Ri?oc=5",
   "kind": null,
-  "source": "www.thefisherman.com",
+  "source": "NJ PEN",
   "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
+   "nj:Incinerator",
+   "nj:Incinerator"
   ],
   "state": "NJ"
  },
@@ -557,6 +583,19 @@
   "state": "NJ"
  },
  {
+  "id": "ada434004036e961",
+  "date": "2025-12-18",
+  "title": "NJ warehouses support 1.3M jobs and $295 billion in business activity, Rutgers report finds",
+  "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1vazVHb0JIZ0x6Rjhkci15NGFYS3ZKS0F0LVNZZWRkY05BNnJOSEJhTkxfZFJreDBXcU1ma1A4UEUtRmJsSkxueEp3UkxFWVdDdEhVb25xQzJlbmQ0?oc=5",
+  "kind": null,
+  "source": "New Jersey 101.5",
+  "tags": [
+   "nj:warehouses",
+   "nj:warehouses"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "fc9acdfe643ba9d0",
   "date": "2025-12-17",
   "title": "Newark plans to ban fossil fuel plants in fight for environmental justice",
@@ -573,31 +612,6 @@
   "date": "2025-11-24",
   "title": "Giving Tuesday 2025",
   "url": "https://ironboundcc.org/",
-  "kind": null,
-  "source": "Ironbound Community Corporation",
-  "tags": [
-   "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "cb3363a28adc97bf",
-  "date": "2025-11-21",
-  "title": "For NJDEP’s next commissioner, threats and opportunities abound",
-  "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa3FRRFVNdW1rZVFXTmZqb1dYNXlKQXhCcDlaX1NRLWFJVlJ2VTN0Z1AtSmM3VUFPZk1zcHdZQlNSYVhGS2lkVmRlanJraGt6QjkwcjZPUE9yelRURE1KNDJCNXJ6VjdzX3U2OHktZ3ZDSXZGSk1DUTRvM2JYNXF4c2pDQzJpYTNQU0h4OTBiSWl4THNnODNoVWgxZi1JdWlQUFlqLQ?oc=5",
-  "kind": null,
-  "source": "NJ Spotlight News",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "4f3921374b486672",
-  "date": "2025-11-14",
-  "title": "Ironbound Community Corporation Hosts Thanksgiving Food Drive, Serving Over 300 Newark Residents",
-  "url": "https://ironboundcc.org/ironbound-community-corporation-hosts-thanksgiving-drive-serving-over-600-newark-residents/",
   "kind": null,
   "source": "Ironbound Community Corporation",
   "tags": [
