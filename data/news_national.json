@@ -1,5 +1,19 @@
 [
  {
+  "id": "bbdf4df9d63e6354",
+  "date": "2026-10-30",
+  "title": "Lawmakers and Regulators Press Air Force Over Continuing Pollution From Joint Base Andrews Fuel Spill",
+  "url": "https://insideclimatenews.org/news/30102026/maryland-continues-to-press-for-answers-joint-base-andrews-fuel-spill/",
+  "kind": null,
+  "source": "Inside Climate News",
+  "tags": [
+   "nj-local:Pollution",
+   "nj-local:contamination"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "993bd0e1fe16914a",
   "date": "2026-10-26",
   "title": "Climate change rarely goes on trial. This one could be a landmark.",
@@ -34,6 +48,19 @@
   "source": "Atmos",
   "tags": [
    "nj-local:pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "a4445e5f761a405f",
+  "date": "2026-10-20",
+  "title": "USDA Will Pay Farmers $8 Billion to Make Up for High Diesel Prices",
+  "url": "https://civileats.com/2026/10/20/usda-will-pay-farmers-8-billion-to-make-up-for-high-diesel-prices/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:Diesel"
   ],
   "state": "US",
   "pitch": true
