@@ -1,18 +1,5 @@
 [
  {
-  "id": "738c35fa8a97bdf3",
-  "date": "2026-10-31",
-  "title": "NJDEP expands faster permitting for environmental restoration projects, cuts application backlogs",
-  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeFZveGEtWjVIVDN2Ry1KckIyelMzdmdTVkRmdTI2bjZkM042QlprWEwwX01YZVQwMnlZZm1peDNQcTl2TnNuNUhoNGRJRVdIUGJicngwcUNyUy1HdFBMVmthckFESFViRDZXZXlsY3A5OXZVU1JmWmVVY05ueXlGWHdQT0ZxZU05b29jMGZqUGk0TnI3Vk9GUG9WMGs5SDhqZHNUTUgtdnlvSlQyX3pibGlWUDVWcTc5RHhn?oc=5",
-  "kind": null,
-  "source": "WRNJ Radio",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
-  ],
-  "state": "NJ"
- },
- {
   "id": "34f3c3f2fc1ce706",
   "date": "2026-10-16",
   "title": "This huge N.J. data center wants to run 12 diesel generators — and residents are pushing back",
@@ -26,19 +13,6 @@
   "state": "NJ"
  },
  {
-  "id": "b44d820191ecbf6a",
-  "date": "2026-10-07",
-  "title": "NJDEP Gives Public More Time To Weigh In On South Brunswick Data Center",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT0w2d3E2U245TmpfdEMxS0NVTG1uNFJTM2REUlR5TzkzRDNCRjcxLW5YYWhpN3hIRzRVczJ3a0d0V2tTdThyTW1lRVVCbVhMQk1yNzd0MzFFbGtEaGpLRTI5OHFBcVZqRGlTeDZNVkNGclEzRUJiWlQwcGNFRmNmSzdEb0hRbjlnNmVLWkYwVmJqeHhQMnhmQnp3N09kaGs3MTZsdlI3T1U?oc=5",
-  "kind": null,
-  "source": "Patch",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
-  ],
-  "state": "NJ"
- },
- {
   "id": "e896f125a50257be",
   "date": "2026-10-01",
   "title": "Hyatt Redevelopment Meeting",
@@ -47,6 +21,19 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "5dc0cf985d32fcdb",
+  "date": "2026-10-01",
+  "title": "NJ data center emitted staggering amounts of air pollution for nearly a year before regulators intervened",
+  "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQeG9TTXZSUGxDTGJaRlVhYWMtU0tRbnZMMmpYcDhIaVZRYnZXNklmN1YwcDNFMWhpTnZJRDZDSzRFN3ZvNFM4c3lKTmRRNGdteGVJdERkc1hibW5tWUxYTGZOdnBVSGExcG96SWZ1V29Va0NKYWtEbG9hWm51aEhjeHVia0JPZ2RiSWw1SWlnZUJSX3o5VEh5ZFpIVzgzZFVkMExRWE1ldmxvdzV6V0VoMndKX19HZXowSHl1UWEzZVRtMWx3am81b0pTdTNXTWFyVXVodVRNWGw0NG1TVmJJ?oc=5",
+  "kind": null,
+  "source": "The Jersey Vindicator",
+  "tags": [
+   "nj:air pollution",
+   "nj:air pollution"
   ],
   "state": "NJ"
  },
@@ -163,19 +150,6 @@
   "state": "NJ"
  },
  {
-  "id": "e2c01dad91238ef0",
-  "date": "2026-08-06",
-  "title": "Is NJDEP fulfilling its mandate to protect New Jersey? No. | Opinion",
-  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOGZObks0SW03SEgxUFZSR1Y0aFJCeWlFQlpJckd2bXhBUVE4MXNJUEZRalNrSXkxRnRUbHNPd0ZTWUI2MmZXRmpTcTBrcFotZVdqcWQ5QzhvN2M2WGFBS3UwQmJNb0NZR01jeXFFZGIyRnM5VFplX2hNVERneFBTbm55bHQ3UmtKbEVRdGF5WjdZU3VYUThVWHFtbHEwZ3JrMFE?oc=5",
-  "kind": null,
-  "source": "Bergen Record",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
-  ],
-  "state": "NJ"
- },
- {
   "id": "857c46376cf5490b",
   "date": "2026-08-02",
   "title": "Residents Push Back Against Proposed Warehouse In Nutley",
@@ -264,6 +238,32 @@
   "state": "NJ"
  },
  {
+  "id": "ced119089b3b976b",
+  "date": "2026-06-08",
+  "title": "“Climate Superfund Act” – Senate Bill No. 2338",
+  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ReW0xR0RaV0FGYnlZcWdfNU85VWJZbE1SYnZDQ1QtdWRSOFJVUXVGYWtkWEZlN3d3RlhYTHh2dHRmRmgzYkstR291U1ZVWUo5SFdSYm9NX2E2YkpXQ1RxQnUwem1DT082c01YRG92MV9LaHNhNnFqdnBtNXQ?oc=5",
+  "kind": null,
+  "source": "New Jersey Business & Industry Association",
+  "tags": [
+   "nj:Superfund",
+   "nj:Superfund"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "267e1cbb60df9321",
+  "date": "2026-06-04",
+  "title": "Faith leaders across New Jersey urge lawmakers to pass \"Polluters Pay\" Climate Superfund Act",
+  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWkI5dXl0UjlySUFEdmFtVzFERG91OVBJbjlyVUVIYjBvaXEzanFoY21sZWlkeGxWVHcwb01YUVVYRVNVMzJVSEsxMUx4Ty1pQXYyenQtU1NSM3Vna1dRcGVFTFVYcnNjd1E3LVowXzU4OUtTc01sNnMxTnQzM0RpbmJLZDdQWWVLSjhfQ2lLRVktWWxpeXJhd0ZDajlMQW9VaVlhZkJhYjVCc054a1gwVElCQ2dfc0g3VlVTYW4wWlJlQXppQ1hyRzRuVQ?oc=5",
+  "kind": null,
+  "source": "The Jersey Vindicator",
+  "tags": [
+   "nj:Superfund",
+   "nj:Superfund"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "2335837b8c972713",
   "date": "2026-06-01",
   "title": "NJEJA Set of Comments on BPU Modernization",
@@ -326,15 +326,15 @@
   "state": "NJ"
  },
  {
-  "id": "b7bdfd385385abe0",
-  "date": "2026-04-30",
-  "title": "News | Update on Keyport Sanitary Landfill at Aeromarine Industrial Park",
-  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9aaTMySFk5VW9KYmlZcDh5M3pQaW5WcTB2YXhTVTJLeFR6Z0JINFItS3NaY3BfNFJzMDdyenlHUVBWbDZxQlNVLWdFdks2RFNCejhJWXBrVlV4NnlocktjRw?oc=5",
+  "id": "5f91580a2da5d6c4",
+  "date": "2026-04-29",
+  "title": "NJDEP| News Releases | DEP Launches Operation Fast to Support Governor Sherrill’s Mission to Deliver More Efficient Government (26/P019)",
+  "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9QQmttN1RoVTAzMDdPV3ZWN0Q5ejlTN3ZFY1pFWEo0aVpaQkpsMmVXTDR3SkVvS2NEdVJMTVVCQkV6bkFkV1d6Qm14Yw?oc=5",
   "kind": null,
-  "source": "NJ.gov",
+  "source": "New Jersey Department of Environmental Protection (.gov)",
   "tags": [
-   "nj:Landfill",
-   "nj:Landfill"
+   "nj:NJDEP",
+   "nj:NJDEP"
   ],
   "state": "NJ"
  },
@@ -500,15 +500,15 @@
   "state": "NJ"
  },
  {
-  "id": "ac09f54d2ecaa85b",
-  "date": "2026-01-17",
-  "title": "Camden Incinerator Permit Renewal Process Underscores Limits of Regulation, Lack of Alternatives, Community Health Concerns",
-  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZy1MY0xJVmtTeFJaY3JxYWY3ek5HNUdjaEdiMzh4WnRMQkllNDR0VmhDa1A1MGdzMjRqODduV3lMMUZXWUVyV1c0ajgxdzRjdG5OMDNpQlBsdWxWMk9XWmFNOUtNTWxDQWhmZHB2aEdfQnI0TDY0cERDMG9NMGdkU2tUVVdTcG5WdEltYXVKZzlBTlNYVDhTQUlDR0M1SmJweE1LSGNkMXNxVzhNLVFCa1BOaTBxVS1PTFFPcDNXSVl1b0RFSno4eS1wbW5CV0VHc2FhZjNoWVd2Z3Ri?oc=5",
+  "id": "eddab238fe363660",
+  "date": "2026-01-19",
+  "title": "SHAWN LATOURETTE’S OUT, ED POTOSNAK IS IN AT NJDEP",
+  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbk00Z1gzOUFUb0RtV014LVBQcTZMU0NTck45QzdSYmtDU00wR3NyV0w5UVlSWFFXWGMtaVliVHljR1hacFFxMXVPbGFNc3NUYzR3MFRfVVVjZG1scDZNc1dLNmhWUGNnVTVmSWlsTFhBZWxiRDRxVjZnOTZCbE9LblltOTg?oc=5",
   "kind": null,
-  "source": "NJ PEN",
+  "source": "www.thefisherman.com",
   "tags": [
-   "nj:Incinerator",
-   "nj:Incinerator"
+   "nj:NJDEP",
+   "nj:NJDEP"
   ],
   "state": "NJ"
  },
@@ -582,19 +582,6 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "0d222aae1b98032b",
-  "date": "2025-11-23",
-  "title": "NJDEP Approves Key Permit For Controversial Gas Pipeline Project",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPX081cDREa0pwYVF4N2M5MjRjMDJONE5kQU5QU1B3X0gyTWVORWtOUDd4NWE5Z0RDaHRzVHhZT1dtaW9nd2tOZEVkeUVRM0pCQjlDTXBFZThteDU1cnFoZTJnUEFMLXV3X3NYZzE0ZG8ta3lVcnFtMGtaMUhwam9sQUtFZk8zNWFoUWtpekpuVVdWei1HeDBsWFE2elVvSjF2N0lsektZUXo2OEdKZjV4d3Fubw?oc=5",
-  "kind": null,
-  "source": "New Brunswick Today",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
   ],
   "state": "NJ"
  },
