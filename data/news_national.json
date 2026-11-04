@@ -1,5 +1,18 @@
 [
  {
+  "id": "d1b6faaaa8f69930",
+  "date": "2026-11-04",
+  "title": "To Make Progress on Climate, Some Farmers Won’t Say ‘Climate’",
+  "url": "https://civileats.com/2026/11/04/to-make-progress-on-climate-some-farmers-wont-say-climate/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:emissions"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "fdc8023c487fec2b",
   "date": "2026-11-03",
   "title": "US Loses a Football Field of Forest Every 2 Minutes",
@@ -54,6 +67,19 @@
   "pitch": true
  },
  {
+  "id": "f5d36ddf483958c0",
+  "date": "2026-11-02",
+  "title": "Five Food and Ag Trends To Watch During Midterm Elections",
+  "url": "https://civileats.com/2026/11/02/five-food-and-ag-trends-to-watch-during-midterm-elections/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:diesel"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "c48c2a67d75dc0e6",
   "date": "2026-10-31",
   "title": "The EPA is quietly killing its web archive",
@@ -75,6 +101,19 @@
   "source": "Atmos",
   "tags": [
    "nj-local:pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "a4445e5f761a405f",
+  "date": "2026-10-20",
+  "title": "USDA Will Pay Farmers $8 Billion to Make Up for High Diesel Prices",
+  "url": "https://civileats.com/2026/10/20/usda-will-pay-farmers-8-billion-to-make-up-for-high-diesel-prices/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:Diesel"
   ],
   "state": "US",
   "pitch": true
