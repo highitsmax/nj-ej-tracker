@@ -26,11 +26,24 @@
   "kind": "job"
  },
  {
-  "id": "d05c96179dc26811",
-  "date": "2026-11-02",
+  "id": "909b122c4ed2b9a2",
+  "date": "2026-11-03",
+  "title": "Campaign Associate (Philadelphia, PA, USA)",
+  "url": "https://www.linkedin.com/jobs/view/4487056127",
+  "source": "Environment America",
+  "deadline": null,
+  "tags": [
+   "jobspy"
+  ],
+  "state": "US",
+  "kind": "job"
+ },
+ {
+  "id": "a4fea3d7390cef94",
+  "date": "2026-11-03",
   "title": "HESI Global Science Communications Specialist (Washington, DC, USA)",
-  "url": "https://www.linkedin.com/jobs/view/4486440778",
-  "source": "Health and Environmental Sciences Institute (HESI)",
+  "url": "https://www.indeed.com/viewjob?jk=2abaeb4beb306e42",
+  "source": "Health and Environmental Sciences Institute",
   "deadline": null,
   "tags": [
    "jobspy"
@@ -40,10 +53,36 @@
  },
  {
   "id": "e9661f8119b07004",
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "title": "Power Your Community, South Central Campaigner (Baltimore City County, MD, USA)",
   "url": "https://www.linkedin.com/jobs/view/4475971235",
   "source": "Natural Resources Defense Council (NRDC)",
+  "deadline": null,
+  "tags": [
+   "jobspy"
+  ],
+  "state": "US",
+  "kind": "job"
+ },
+ {
+  "id": "ee3adc4a90be5ff2",
+  "date": "2026-11-03",
+  "title": "Environmental Organizer (Baltimore, MD, USA)",
+  "url": "https://www.linkedin.com/jobs/view/4487050732",
+  "source": "Green Corps",
+  "deadline": null,
+  "tags": [
+   "jobspy"
+  ],
+  "state": "US",
+  "kind": "job"
+ },
+ {
+  "id": "d05c96179dc26811",
+  "date": "2026-11-02",
+  "title": "HESI Global Science Communications Specialist (Washington, DC, USA)",
+  "url": "https://www.linkedin.com/jobs/view/4486440778",
+  "source": "Health and Environmental Sciences Institute (HESI)",
   "deadline": null,
   "tags": [
    "jobspy"
