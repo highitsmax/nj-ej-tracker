@@ -26,19 +26,6 @@
   "state": "NJ"
  },
  {
-  "id": "738c35fa8a97bdf3",
-  "date": "2026-10-31",
-  "title": "NJDEP expands faster permitting for environmental restoration projects, cuts application backlogs",
-  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeFZveGEtWjVIVDN2Ry1KckIyelMzdmdTVkRmdTI2bjZkM042QlprWEwwX01YZVQwMnlZZm1peDNQcTl2TnNuNUhoNGRJRVdIUGJicngwcUNyUy1HdFBMVmthckFESFViRDZXZXlsY3A5OXZVU1JmWmVVY05ueXlGWHdQT0ZxZU05b29jMGZqUGk0TnI3Vk9GUG9WMGs5SDhqZHNUTUgtdnlvSlQyX3pibGlWUDVWcTc5RHhn?oc=5",
-  "kind": null,
-  "source": "WRNJ Radio",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
-  ],
-  "state": "NJ"
- },
- {
   "id": "e896f125a50257be",
   "date": "2026-10-01",
   "title": "Hyatt Redevelopment Meeting",
@@ -161,6 +148,19 @@
   "tags": [
    "nj:pollution",
    "nj:pollution"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "e88b3421900b7b00",
+  "date": "2026-08-27",
+  "title": "North Brunswick residents fought a 300,000-square-foot warehouse. They won.",
+  "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hNUM5VllqcUR3aER6bkZseGFiZllWbGl2T0M1Qzc1S0pjckxZWU5UOThkSkRPVGtNNUY3MzVsUjVOS1pmRW1Zdk1aT2dVaUJlbURmVUM0dWJoalZrenhZbzlGbzhkQUE4dVh3?oc=5",
+  "kind": null,
+  "source": "New Jersey 101.5",
+  "tags": [
+   "nj:warehouse",
+   "nj:warehouse"
   ],
   "state": "NJ"
  },
