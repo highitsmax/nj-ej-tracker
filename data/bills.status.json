@@ -1,7 +1,7 @@
 {
- "ok": false,
- "last_success": "2026-11-11T21:44:27+00:00",
- "last_attempt": "2026-11-12T05:44:13+00:00",
- "note": "RuntimeError: NJ Legislature bulk ZIP fetch failed: curl: curl: (28) Connection timed out after 90001 milliseconds",
+ "ok": true,
+ "last_success": "2026-11-12T14:37:05+00:00",
+ "last_attempt": "2026-11-12T14:37:05+00:00",
+ "note": "",
  "count": 5
 }
