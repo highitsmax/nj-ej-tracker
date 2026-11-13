@@ -1,5 +1,31 @@
 [
  {
+  "id": "029e1d904be4f65b",
+  "date": "2026-11-13",
+  "title": "The cozy radicalism of repair cafés",
+  "url": "https://grist.org/culture/cozy-radicalism-right-to-repair-cafes/",
+  "kind": null,
+  "source": "Grist",
+  "tags": [
+   "nj-local:warehouses"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "8ad941c4d6aac0ba",
+  "date": "2026-11-13",
+  "title": "Salton Sea communities push back on bill to fast-track development",
+  "url": "https://www.hcn.org/articles/salton-sea-communities-push-back-on-bill-to-fast-track-development/",
+  "kind": null,
+  "source": "High Country News",
+  "tags": [
+   "nj-local:toxic"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "d9d952e925675ca4",
   "date": "2026-11-11",
   "title": "North Carolina Vows to Hold Chemours Accountable for Contamination ‘No Matter How Long It Takes’",
@@ -36,45 +62,6 @@
   "tags": [
    "nj-local:pollution",
    "nj-local:pollution"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "a6d87ff27c3772a3",
-  "date": "2026-11-05",
-  "title": "EPA Scraps Effort to Better Regulate Air Pollution from CAFOs",
-  "url": "https://civileats.com/2026/11/05/epa-scraps-effort-to-better-regulate-air-pollution-from-cafos/",
-  "kind": null,
-  "source": "Civil Eats",
-  "tags": [
-   "nj-local:Air Pollution"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "d1b6faaaa8f69930",
-  "date": "2026-11-04",
-  "title": "To Make Progress on Climate, Some Farmers Won’t Say ‘Climate’",
-  "url": "https://civileats.com/2026/11/04/to-make-progress-on-climate-some-farmers-wont-say-climate/",
-  "kind": null,
-  "source": "Civil Eats",
-  "tags": [
-   "nj-local:emissions"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "f5d36ddf483958c0",
-  "date": "2026-11-02",
-  "title": "Five Food and Ag Trends To Watch During Midterm Elections",
-  "url": "https://civileats.com/2026/11/02/five-food-and-ag-trends-to-watch-during-midterm-elections/",
-  "kind": null,
-  "source": "Civil Eats",
-  "tags": [
-   "nj-local:diesel"
   ],
   "state": "US",
   "pitch": true
