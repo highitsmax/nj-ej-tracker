@@ -12,19 +12,6 @@
   "state": "NJ"
  },
  {
-  "id": "e917477dfdac58da",
-  "date": "2026-11-05",
-  "title": "WATCH: Inside the investigation into N.J. data center that’s emitting staggering amounts of pollution",
-  "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTDAxUEliVHdmMDNuT0RfajJ5UWJGSlpyTGFuMEVQX0o3dEJVZE04YWduekcwVDA1UjhBWkpkRGlxdC1jb2FhcjQ4QTRoNjU2V2p0Rzg0SkxyWUZ0NVZIcE1EWThUQzBDWUpXWkpCZkRacE5VXzFQS1Z1QklZOUVCQU1BbmFJelVIdTJJYlhhVXQ2bmtRSlpRdG1JNEpka2Z5bmNNV2d2UU5haXBSblF2Y3BUTUxLQUlZTUVRZnQ1V1JPSzVqdjJicEZoTHEyRDDSAeMBQVVfeXFMTXphWExjSlFHV1pmdmY4YVQ5bGJwOV9iTHctQU5GaWdMVFFKSlgtelNJRE42N2hZUjk4YlB1VzctYTRFS1l1OUUtT2Q2R2xuVm1TM25sNHlHZGRxM2pxWk41bzQ3RWlpakxjUVA5eVVucXkxQ0lyanktdzhUaFRXSWpMaHhPbldkTEM1dkxwZkNlQ1JkemVVX054MjFYMU9ISHkxcVNzd3lmMm5INEI5a01lT2NITUZaNHh2OFQwUWZ6MFpzR1dFLVZPNmQ4dWtvbndiN1BCM3diRHRhb2pzbHprdVE?oc=5",
-  "kind": null,
-  "source": "NJ.com",
-  "tags": [
-   "nj:pollution",
-   "nj:pollution"
-  ],
-  "state": "NJ"
- },
- {
   "id": "4587bee1b69bc587",
   "date": "2026-11-04",
   "title": "NJ governor warns gas companies of sanctions for importing Russian diesel",
@@ -458,12 +445,12 @@
   "state": "NJ"
  },
  {
-  "id": "92e28e8db5513250",
+  "id": "64464c0e43da34cc",
   "date": "2026-01-06",
-  "title": "Court upholds New Jersey’s landmark environmental justice rule",
-  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM2t5T0xSMXBnOVJ2M3BXZ3FJakY2LWlqSkpSYlhlRG9fa3pyRWZLWVFqOVFGeWktZmVRVWVKWXpUUEpnRHJZbWI4Qm8xSDRjTlBSdUF0UmdYcGp6bFpMSmY0N013a25yMTJQU01BNWFDUUthTHhQQmFvcUdKY2NrMWFxczJhaUhmdUFyUGR5T3lqSktZaTA5ZVJzeHk?oc=5",
+  "title": "Court upholds NJ’s landmark environmental justice rules",
+  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUUdqalRrUHhPb3RWT2tMVHNQblRvZFBwTjJoUjJhZnlaTUtVY3ZCMS1JVDdlSE05SldhS0ZvNkJpbGkwVWF2TmtjZ3E2UkxxWlYzQmhYTk5pZE1pcEJfcnpLdFZYTElqblgyR2ttUVlyS25zdnJfd0tMQVRNRl9iQnBNbFV0OVk4emcyckYxX3N3Y3Y3aW81Qw?oc=5",
   "kind": null,
-  "source": "E&E News by POLITICO",
+  "source": "NJ Spotlight News",
   "tags": [
    "environmental justice"
   ],
@@ -476,6 +463,18 @@
   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVkNsajlMOTFwbDBuLTBPMWFtbGkzck9IdzRsS3YyMWQ4dzhfUWZUYmtmakFyRFQtclhCeTRlejY5RTFVUnRPa2tUbncxU19WNzFpRTJOVVhSajIteUd2T05nYl95MW5YcjdsWVBlNFh3V1hjeUxjc3pLR2FNZmd3ZmNIUHY5QXVIbG1PSEw4OW54M2RUQ0lDcG9Mc0xrTWVrUG05WFRNX1E4a0F2?oc=5",
   "kind": null,
   "source": "Earthjustice",
+  "tags": [
+   "environmental justice"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "be0bbb9969abc711",
+  "date": "2026-01-05",
+  "title": "Article | Court upholds New Jersey’s landmark environmental justice rule",
+  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQa0UybGFPU1ZOVldVUlFqbWp6TW5IdkZUSlJiSW1YWGtKRnNOZ2JQd1ZSamt5MUgxQmhjWnNxNEQybTF4T1A5dnVUZVF0Mm9RV3FHOXhTX1kwZ2RiSDhtRnI2czNxOUhpeVZEZUFxdXpjQmEwWGJzc3Nac2RWSDVaZjBNR05TZ00zN21xbUJYcVItdTNOWXQ2NUVubmdYeEtZdzMxWUVlckxVNWExTmYyenRJMkV6M2ZON1lnSmJn?oc=5",
+  "kind": null,
+  "source": "POLITICO Pro",
   "tags": [
    "environmental justice"
   ],
