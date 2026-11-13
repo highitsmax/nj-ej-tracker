@@ -1,5 +1,17 @@
 [
  {
+  "id": "15dc472cf77f3930",
+  "date": "2026-11-13",
+  "title": "RFP: SBCLT seeks general contractor for stabilization of 1523 Hazel Street",
+  "url": "https://www.sbclt.org/rfp-stabilization-of-1523-hazel-street/",
+  "kind": null,
+  "source": "South Baltimore Community Land Trust",
+  "tags": [
+   "allied"
+  ],
+  "state": "MD"
+ },
+ {
   "id": "029e1d904be4f65b",
   "date": "2026-11-13",
   "title": "The cozy radicalism of repair cafés",
@@ -13,6 +25,19 @@
   "pitch": true
  },
  {
+  "id": "d889c89cc4a6513f",
+  "date": "2026-11-13",
+  "title": "U.N. Leader Says People Power Is the Secret Weapon Against Global Warming",
+  "url": "https://insideclimatenews.org/news/13112026/u-n-leader-says-people-power-is-the-secret-weapon-against-global-warming/",
+  "kind": null,
+  "source": "Inside Climate News",
+  "tags": [
+   "environmental justice"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "8ad941c4d6aac0ba",
   "date": "2026-11-13",
   "title": "Salton Sea communities push back on bill to fast-track development",
@@ -20,21 +45,6 @@
   "kind": null,
   "source": "High Country News",
   "tags": [
-   "nj-local:toxic"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "d9d952e925675ca4",
-  "date": "2026-11-11",
-  "title": "North Carolina Vows to Hold Chemours Accountable for Contamination ‘No Matter How Long It Takes’",
-  "url": "https://insideclimatenews.org/news/11112026/north-carolina-chemours-pfas-pollution-accountability/",
-  "kind": null,
-  "source": "Inside Climate News",
-  "tags": [
-   "nj-local:Contamination",
-   "nj-local:contaminating",
    "nj-local:toxic"
   ],
   "state": "US",
@@ -62,6 +72,45 @@
   "tags": [
    "nj-local:pollution",
    "nj-local:pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "a6d87ff27c3772a3",
+  "date": "2026-11-05",
+  "title": "EPA Scraps Effort to Better Regulate Air Pollution from CAFOs",
+  "url": "https://civileats.com/2026/11/05/epa-scraps-effort-to-better-regulate-air-pollution-from-cafos/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:Air Pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "d1b6faaaa8f69930",
+  "date": "2026-11-04",
+  "title": "To Make Progress on Climate, Some Farmers Won’t Say ‘Climate’",
+  "url": "https://civileats.com/2026/11/04/to-make-progress-on-climate-some-farmers-wont-say-climate/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:emissions"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "f5d36ddf483958c0",
+  "date": "2026-11-02",
+  "title": "Five Food and Ag Trends To Watch During Midterm Elections",
+  "url": "https://civileats.com/2026/11/02/five-food-and-ag-trends-to-watch-during-midterm-elections/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:diesel"
   ],
   "state": "US",
   "pitch": true
@@ -107,18 +156,6 @@
   "date": "2026-09-01",
   "title": "October 1: BRESCO Incinerator Permit Hearing",
   "url": "https://www.sbclt.org/october-1-bresco-incinerator-permit-hearing/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
- },
- {
-  "id": "771ad60838005a8b",
-  "date": "2026-08-20",
-  "title": "See the Completed EJ Center Mural!",
-  "url": "https://www.sbclt.org/see-the-completed-ej-center-mural/",
   "kind": null,
   "source": "South Baltimore Community Land Trust",
   "tags": [
