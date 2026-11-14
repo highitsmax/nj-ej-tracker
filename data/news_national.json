@@ -1,5 +1,18 @@
 [
  {
+  "id": "a42dc5ee47468144",
+  "date": "2026-11-14",
+  "title": "A Clean Air Advocate Will Represent Part of America’s Oil Capital in Congress",
+  "url": "https://insideclimatenews.org/news/14112026/a-clean-air-advocate-will-represent-part-of-americas-oil-capital-in-congress/",
+  "kind": null,
+  "source": "Inside Climate News",
+  "tags": [
+   "nj-local:pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "15dc472cf77f3930",
   "date": "2026-11-13",
   "title": "RFP: SBCLT seeks general contractor for stabilization of 1523 Hazel Street",
@@ -25,9 +38,9 @@
   "pitch": true
  },
  {
-  "id": "d889c89cc4a6513f",
+  "id": "464a77e60531555a",
   "date": "2026-11-13",
-  "title": "U.N. Leader Says People Power Is the Secret Weapon Against Global Warming",
+  "title": "UN Leader Says People Power Is the Secret Weapon Against Global Warming",
   "url": "https://insideclimatenews.org/news/13112026/u-n-leader-says-people-power-is-the-secret-weapon-against-global-warming/",
   "kind": null,
   "source": "Inside Climate News",
@@ -72,6 +85,45 @@
   "tags": [
    "nj-local:pollution",
    "nj-local:pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "a6d87ff27c3772a3",
+  "date": "2026-11-05",
+  "title": "EPA Scraps Effort to Better Regulate Air Pollution from CAFOs",
+  "url": "https://civileats.com/2026/11/05/epa-scraps-effort-to-better-regulate-air-pollution-from-cafos/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:Air Pollution"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "d1b6faaaa8f69930",
+  "date": "2026-11-04",
+  "title": "To Make Progress on Climate, Some Farmers Won’t Say ‘Climate’",
+  "url": "https://civileats.com/2026/11/04/to-make-progress-on-climate-some-farmers-wont-say-climate/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:emissions"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "f5d36ddf483958c0",
+  "date": "2026-11-02",
+  "title": "Five Food and Ag Trends To Watch During Midterm Elections",
+  "url": "https://civileats.com/2026/11/02/five-food-and-ag-trends-to-watch-during-midterm-elections/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:diesel"
   ],
   "state": "US",
   "pitch": true
