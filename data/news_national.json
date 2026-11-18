@@ -1,5 +1,18 @@
 [
  {
+  "id": "93d3b5ccfa12aa5f",
+  "date": "2026-11-18",
+  "title": "California Manure Lagoons Could Be ‘Ticking Time Bombs’ in the Forecasted Monster El Niño",
+  "url": "https://insideclimatenews.org/news/17112026/california-manure-lagoons-el-nino-flooding/",
+  "kind": null,
+  "source": "Inside Climate News",
+  "tags": [
+   "nj-local:contaminants"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "d18a4c9268e1662d",
   "date": "2026-11-16",
   "title": "In Cape Cod’s Depleted Estuaries, Shellfish Help Reverse Pollution",
@@ -8,19 +21,6 @@
   "source": "Civil Eats",
   "tags": [
    "nj-local:Pollution"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "a42dc5ee47468144",
-  "date": "2026-11-14",
-  "title": "A Clean Air Advocate Will Represent Part of America’s Oil Capital in Congress",
-  "url": "https://insideclimatenews.org/news/14112026/a-clean-air-advocate-will-represent-part-of-americas-oil-capital-in-congress/",
-  "kind": null,
-  "source": "Inside Climate News",
-  "tags": [
-   "nj-local:pollution"
   ],
   "state": "US",
   "pitch": true
