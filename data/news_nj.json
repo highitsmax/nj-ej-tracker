@@ -1,17 +1,5 @@
 [
  {
-  "id": "f9d223f1aa2be92b",
-  "date": "2026-11-18",
-  "title": "BAAJA is the first Step Toward Environmental Justice",
-  "url": "https://www.insidernj.com/baaja-is-the-first-step-toward-environmental-justice/",
-  "kind": null,
-  "source": "InsiderNJ",
-  "tags": [
-   "environmental justice"
-  ],
-  "state": "NJ"
- },
- {
   "id": "54c293d0655a0581",
   "date": "2026-11-18",
   "title": "BAAJA is the first Step Toward Environmental Justice",
@@ -20,19 +8,6 @@
   "source": "Insider NJ",
   "tags": [
    "environmental justice"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "9fa5717b1c2d011a",
-  "date": "2026-11-17",
-  "title": "NJDEP| News Releases | Sherrill Administration Delivers Nearly $15 Million in Grants for Electric School Buses and Chargers (26/P055)",
-  "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBBMHBldGZBVlc4bG1oY0MzOEZvN2ZPcDFsc1BLeF95c21DU2t3cnVGdnhLR3llbUdQTzdHaUMxeGVVQjlxMmVUdjJ5UQ?oc=5",
-  "kind": null,
-  "source": "New Jersey Department of Environmental Protection (.gov)",
-  "tags": [
-   "nj:NJDEP",
-   "nj:NJDEP"
   ],
   "state": "NJ"
  },
@@ -74,6 +49,19 @@
   "state": "NJ"
  },
  {
+  "id": "738c35fa8a97bdf3",
+  "date": "2026-10-31",
+  "title": "NJDEP expands faster permitting for environmental restoration projects, cuts application backlogs",
+  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeFZveGEtWjVIVDN2Ry1KckIyelMzdmdTVkRmdTI2bjZkM042QlprWEwwX01YZVQwMnlZZm1peDNQcTl2TnNuNUhoNGRJRVdIUGJicngwcUNyUy1HdFBMVmthckFESFViRDZXZXlsY3A5OXZVU1JmWmVVY05ueXlGWHdQT0ZxZU05b29jMGZqUGk0TnI3Vk9GUG9WMGs5SDhqZHNUTUgtdnlvSlQyX3pibGlWUDVWcTc5RHhn?oc=5",
+  "kind": null,
+  "source": "WRNJ Radio",
+  "tags": [
+   "nj:NJDEP",
+   "nj:NJDEP"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "5c63c20b2d5bb110",
   "date": "2026-10-14",
   "title": "Crossing Ironbound Borders: A Journey of Environmental Justice",
@@ -86,6 +74,19 @@
   "state": "NJ"
  },
  {
+  "id": "b44d820191ecbf6a",
+  "date": "2026-10-07",
+  "title": "NJDEP Gives Public More Time To Weigh In On South Brunswick Data Center",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT0w2d3E2U245TmpfdEMxS0NVTG1uNFJTM2REUlR5TzkzRDNCRjcxLW5YYWhpN3hIRzRVczJ3a0d0V2tTdThyTW1lRVVCbVhMQk1yNzd0MzFFbGtEaGpLRTI5OHFBcVZqRGlTeDZNVkNGclEzRUJiWlQwcGNFRmNmSzdEb0hRbjlnNmVLWkYwVmJqeHhQMnhmQnp3N09kaGs3MTZsdlI3T1U?oc=5",
+  "kind": null,
+  "source": "Patch",
+  "tags": [
+   "nj:NJDEP",
+   "nj:NJDEP"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "e896f125a50257be",
   "date": "2026-10-01",
   "title": "Hyatt Redevelopment Meeting",
@@ -94,19 +95,6 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "5dc0cf985d32fcdb",
-  "date": "2026-10-01",
-  "title": "NJ data center emitted staggering amounts of air pollution for nearly a year before regulators intervened",
-  "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQeG9TTXZSUGxDTGJaRlVhYWMtU0tRbnZMMmpYcDhIaVZRYnZXNklmN1YwcDNFMWhpTnZJRDZDSzRFN3ZvNFM4c3lKTmRRNGdteGVJdERkc1hibW5tWUxYTGZOdnBVSGExcG96SWZ1V29Va0NKYWtEbG9hWm51aEhjeHVia0JPZ2RiSWw1SWlnZUJSX3o5VEh5ZFpIVzgzZFVkMExRWE1ldmxvdzV6V0VoMndKX19HZXowSHl1UWEzZVRtMWx3am81b0pTdTNXTWFyVXVodVRNWGw0NG1TVmJJ?oc=5",
-  "kind": null,
-  "source": "The Jersey Vindicator",
-  "tags": [
-   "nj:air pollution",
-   "nj:air pollution"
   ],
   "state": "NJ"
  },
@@ -131,19 +119,6 @@
   "source": "NJEJA",
   "tags": [
    "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "8d569cb18a67d2b9",
-  "date": "2026-09-23",
-  "title": "New Jersey's largest data center fined $1.07 million for air pollution violations in Vineland, Cumberland County",
-  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV05HNkpXWF9fWEdxWW5YSE53MHgxb3JHZzZoSDFDS3JTSmJoaXptTFg4bmk0dTc0cU8wc0prazJLa1RORGN2Nk5zdHIwcC1xdm4wcHNVc3Yxa0hpZWJLNEQzWDNJVFNNdkc5dlRjWFNUZWlaWkJIZGxPV1Zkd3VWSDlzdV9abjJRbThJb0tFN3VsWjJzRnpMeWlJb9IBoAFBVV95cUxOR3RNOFVEZjFKRDlBbWxYd3YzOHd1Tk50VzF1T2NqQ3hWTWQ4d29MZEFVQllkWHBYaWJFc3FjR2E4S2RjX3NkMzJPaWotLTFfdzd5RGxSdmVLb2pOV0R5dHpxMWJHQU1EMHhXTVBCTWNLRG5tbUZTeGs4OGEwRmhPOHllVjBTSTlfZmVYSUNrV0RpaW5ERnBPSDdNWEFJaC1R?oc=5",
-  "kind": null,
-  "source": "6abc Philadelphia",
-  "tags": [
-   "nj:air pollution",
-   "nj:air pollution"
   ],
   "state": "NJ"
  },
@@ -186,19 +161,6 @@
   "state": "NJ"
  },
  {
-  "id": "1a3b36fde81b0ba8",
-  "date": "2026-08-28",
-  "title": "‘It’s all you can hear’: New Jersey lawsuit takes on datacenter’s noise pollution",
-  "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSjU1UzBNT0hhOHRoMktZekNFS1R1YnJMazQ1MDhhSnRpWEtnTWlPT1k5TFc3dDE2ZWl6V1ROMnR2ZkxSTWZJeFRIVGpCTlQ2eGlHMGdCVEEtb29QSFRwNnpudVd2dGx6Y1gxVmwyT29iWXc1d0Q1bXl6UTItM0VmX3hzeUxiZWJqZHBYRw?oc=5",
-  "kind": null,
-  "source": "The Guardian",
-  "tags": [
-   "nj:pollution",
-   "nj:pollution"
-  ],
-  "state": "NJ"
- },
- {
   "id": "764c02a76dc2e357",
   "date": "2026-08-19",
   "title": "NJEJA Comments on BPU Virtual Power Plant Energy Program Design",
@@ -223,6 +185,19 @@
   "state": "NJ"
  },
  {
+  "id": "e2c01dad91238ef0",
+  "date": "2026-08-06",
+  "title": "Is NJDEP fulfilling its mandate to protect New Jersey? No. | Opinion",
+  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOGZObks0SW03SEgxUFZSR1Y0aFJCeWlFQlpJckd2bXhBUVE4MXNJUEZRalNrSXkxRnRUbHNPd0ZTWUI2MmZXRmpTcTBrcFotZVdqcWQ5QzhvN2M2WGFBS3UwQmJNb0NZR01jeXFFZGIyRnM5VFplX2hNVERneFBTbm55bHQ3UmtKbEVRdGF5WjdZU3VYUThVWHFtbHEwZ3JrMFE?oc=5",
+  "kind": null,
+  "source": "Bergen Record",
+  "tags": [
+   "nj:NJDEP",
+   "nj:NJDEP"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "857c46376cf5490b",
   "date": "2026-08-02",
   "title": "Residents Push Back Against Proposed Warehouse In Nutley",
@@ -232,19 +207,6 @@
   "tags": [
    "nj:Warehouse",
    "nj:Warehouse"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "c07bb7f22347f886",
-  "date": "2026-07-18",
-  "title": "New Jersey Health Department urges residents to stay indoors as wildfire smoke degrades air quality",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQ0tiSHZ3SUxULTByd0hOVlNBbkpuakdIU0VVUVNtYWFwbXE5LWhLUk8xNzd6ZXEzU0NqREVZRzAzSG0xX1hxT2pRZFlBNUtiY0pKVHVPLV9yTTMxU0Qwd2pBOHJsUG95UnpHYUxGaElkc3RFWnozOWRCR0I1RThtYVpiMG9Rcm9Jai1jQVo0Z2J1T1hJYjkyb3VSaFNaVlVBeXRWaTgwRHJaVUVYaG1ONjRqWkttcWV3VERNTTJBQQ?oc=5",
-  "kind": null,
-  "source": "WRNJ Radio",
-  "tags": [
-   "nj:air quality",
-   "nj:air quality"
   ],
   "state": "NJ"
  },
@@ -269,20 +231,6 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
-  ],
-  "state": "NJ"
- },
- {
-  "id": "dc536688a2435d97",
-  "date": "2026-06-19",
-  "title": "Keyport, New Jersey residents worry toxic landfill is causing cancer",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeW81SHdqejBRanJtbGN6Z19iSG5YbkhhV1ZfbXd3UzhjQ0lKNnFabUVjbUhFNHB5ZkFJZDE2dHlRWXNKb3FiNmc5c3dyV2hmalhTMmNNWWd6ZEtBUm5HaFd2ZXdJTGlvOTV2VnFiNDB2bXo3Y0hRc0VDWXNxOFRpa3hUc2MzdGFDYU1NZFF0bXd5ZFJjR2hvM3VvbXRUeUJOOGswX2Y0Yk_SAa4BQVVfeXFMTlFIaTNNRnJVdW5FUUp3N0RsNVB1d0R0NVJNWjdkN1NfX00tbWNGWGE5OXpNS1JQS0hlU3A1NGZpSnNmaW5UOUZ3Nks1bGdlc3o1NWp4ckl5UnlfUmZubkdTdEJXM2lkYXVWa25JRkN6elZFV0RBTFVKQUZaazdocFA2d2F0N1lNaFM4ejFqY0M3M1RsQWNZdmhZZk1PWU1IaDBDNEpxY2tsMjNCaHB3?oc=5",
-  "kind": null,
-  "source": "NewsNation",
-  "tags": [
-   "nj:toxic",
-   "nj:landfill",
-   "nj:toxic"
   ],
   "state": "NJ"
  },
@@ -347,10 +295,10 @@
   "state": "NJ"
  },
  {
-  "id": "bbdd87b9ee95d7f1",
+  "id": "b7bdfd385385abe0",
   "date": "2026-04-30",
-  "title": "Department of Health | News | Update on Keyport Sanitary Landfill at Aeromarine Industrial Park",
-  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2MmVRRnY4THF6UEttcXRra0pONmxOeHlsVFhRS1hhZXVaN2NSTTFqUHVoYWZ2YjRhZF81ekZaX1AyS2RxR1JMelRfXzVxWmZmbFBJT1hFT3BEeHpFTWlYOHFFdDB6UDRkSUt2Wg?oc=5",
+  "title": "News | Update on Keyport Sanitary Landfill at Aeromarine Industrial Park",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9aaTMySFk5VW9KYmlZcDh5M3pQaW5WcTB2YXhTVTJLeFR6Z0JINFItS3NaY3BfNFJzMDdyenlHUVBWbDZxQlNVLWdFdks2RFNCejhJWXBrVlV4NnlocktjRw?oc=5",
   "kind": null,
   "source": "NJ.gov",
   "tags": [
@@ -483,6 +431,19 @@
   "state": "NJ"
  },
  {
+  "id": "ac09f54d2ecaa85b",
+  "date": "2026-01-17",
+  "title": "Camden Incinerator Permit Renewal Process Underscores Limits of Regulation, Lack of Alternatives, Community Health Concerns",
+  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZy1MY0xJVmtTeFJaY3JxYWY3ek5HNUdjaEdiMzh4WnRMQkllNDR0VmhDa1A1MGdzMjRqODduV3lMMUZXWUVyV1c0ajgxdzRjdG5OMDNpQlBsdWxWMk9XWmFNOUtNTWxDQWhmZHB2aEdfQnI0TDY0cERDMG9NMGdkU2tUVVdTcG5WdEltYXVKZzlBTlNYVDhTQUlDR0M1SmJweE1LSGNkMXNxVzhNLVFCa1BOaTBxVS1PTFFPcDNXSVl1b0RFSno4eS1wbW5CV0VHc2FhZjNoWVd2Z3Ri?oc=5",
+  "kind": null,
+  "source": "NJ PEN",
+  "tags": [
+   "nj:Incinerator",
+   "nj:Incinerator"
+  ],
+  "state": "NJ"
+ },
+ {
   "id": "f02be5dffc355bd9",
   "date": "2026-01-07",
   "title": "New Jersey court upholds key environmental justice law",
@@ -539,6 +500,19 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "0d222aae1b98032b",
+  "date": "2025-11-23",
+  "title": "NJDEP Approves Key Permit For Controversial Gas Pipeline Project",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPX081cDREa0pwYVF4N2M5MjRjMDJONE5kQU5QU1B3X0gyTWVORWtOUDd4NWE5Z0RDaHRzVHhZT1dtaW9nd2tOZEVkeUVRM0pCQjlDTXBFZThteDU1cnFoZTJnUEFMLXV3X3NYZzE0ZG8ta3lVcnFtMGtaMUhwam9sQUtFZk8zNWFoUWtpekpuVVdWei1HeDBsWFE2elVvSjF2N0lsektZUXo2OEdKZjV4d3Fubw?oc=5",
+  "kind": null,
+  "source": "New Brunswick Today",
+  "tags": [
+   "nj:NJDEP",
+   "nj:NJDEP"
   ],
   "state": "NJ"
  }
