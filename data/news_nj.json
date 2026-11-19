@@ -12,10 +12,10 @@
   "state": "NJ"
  },
  {
-  "id": "128700811caff60b",
+  "id": "54c293d0655a0581",
   "date": "2026-11-18",
   "title": "BAAJA is the first Step Toward Environmental Justice",
-  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaUdsanktb0NXZUpSRkZsSU9VUWxkanFsRjYzZXhtYkl2T21mLU9IdkJVVURyNThLVXE5d2ZDbWw0OGF0TC11dTNhSVVrMnRmSHAzOG82WVkza2NhTXpfNjhPS28yRDZnQmRXS1lhVGNYM3pSck9GcGV2MEhKU3dCNVZ5UEY5dWdJLVZxU1BRVmJ1VUo0eHdDSQ?oc=5",
+  "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONS1PZE1GYnV6MWlBY3dlZHZXcENodk9POGZSUVBJRFJUXzZJNC1PV0I1ZnJsSVU3VWtrem5nX3RMVHV2ZDVZQ25Tb1BXMUZZbGwxNndXVURnQ1oyenN1djZmcWt0b2EtdnB0TTFsWTI4T2R2NndncWE1UGY0ZWFBU0VoYy02QQ?oc=5",
   "kind": null,
   "source": "Insider NJ",
   "tags": [
@@ -269,6 +269,20 @@
   "source": "Ironbound Community Corporation",
   "tags": [
    "allied"
+  ],
+  "state": "NJ"
+ },
+ {
+  "id": "dc536688a2435d97",
+  "date": "2026-06-19",
+  "title": "Keyport, New Jersey residents worry toxic landfill is causing cancer",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeW81SHdqejBRanJtbGN6Z19iSG5YbkhhV1ZfbXd3UzhjQ0lKNnFabUVjbUhFNHB5ZkFJZDE2dHlRWXNKb3FiNmc5c3dyV2hmalhTMmNNWWd6ZEtBUm5HaFd2ZXdJTGlvOTV2VnFiNDB2bXo3Y0hRc0VDWXNxOFRpa3hUc2MzdGFDYU1NZFF0bXd5ZFJjR2hvM3VvbXRUeUJOOGswX2Y0Yk_SAa4BQVVfeXFMTlFIaTNNRnJVdW5FUUp3N0RsNVB1d0R0NVJNWjdkN1NfX00tbWNGWGE5OXpNS1JQS0hlU3A1NGZpSnNmaW5UOUZ3Nks1bGdlc3o1NWp4ckl5UnlfUmZubkdTdEJXM2lkYXVWa25JRkN6elZFV0RBTFVKQUZaazdocFA2d2F0N1lNaFM4ejFqY0M3M1RsQWNZdmhZZk1PWU1IaDBDNEpxY2tsMjNCaHB3?oc=5",
+  "kind": null,
+  "source": "NewsNation",
+  "tags": [
+   "nj:toxic",
+   "nj:landfill",
+   "nj:toxic"
   ],
   "state": "NJ"
  },

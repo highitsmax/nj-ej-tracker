@@ -1,5 +1,18 @@
 [
  {
+  "id": "d599d65b821acf32",
+  "date": "2026-11-18",
+  "title": "B26-0656: Internet Gaming and Consumer Protection Act of 2026",
+  "url": "https://legiscan.com/DC/bill/B26-0656/2025",
+  "source": "DC Legislature",
+  "deadline": null,
+  "tags": [
+   "legiscan"
+  ],
+  "state": "DC",
+  "kind": null
+ },
+ {
   "id": "34d54985d1db4235",
   "date": "2026-10-19",
   "title": "SB120: Providing for cannabis; regulating the personal use and possession of cannabis; establishing the Cannabis Control Board; providing for powers and duties of the Cannabis Control Board; establish",
@@ -634,19 +647,6 @@
    "legiscan"
   ],
   "state": "PA",
-  "kind": null
- },
- {
-  "id": "54cafb66429bd379",
-  "date": "2025-03-11",
-  "title": "S00186: Establishes the insure our communities act to implement climate leadership and community protection act targets for insurers; identifies and protects such communities; relates to affordability",
-  "url": "https://legiscan.com/NY/bill/S00186/2025",
-  "source": "NY Legislature",
-  "deadline": null,
-  "tags": [
-   "legiscan"
-  ],
-  "state": "NY",
   "kind": null
  }
 ]
