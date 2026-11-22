@@ -52,18 +52,6 @@
   "pitch": true
  },
  {
-  "id": "15dc472cf77f3930",
-  "date": "2026-11-13",
-  "title": "RFP: SBCLT seeks general contractor for stabilization of 1523 Hazel Street",
-  "url": "https://www.sbclt.org/rfp-stabilization-of-1523-hazel-street/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
- },
- {
   "id": "029e1d904be4f65b",
   "date": "2026-11-13",
   "title": "The cozy radicalism of repair cafés",
@@ -88,18 +76,6 @@
   ],
   "state": "US",
   "pitch": true
- },
- {
-  "id": "ebb497e22618d9d4",
-  "date": "2026-11-10",
-  "title": "MDE denies PMI construction permit after South Baltimore residents’ testimonies",
-  "url": "https://www.sbclt.org/mde-denies-pmi-construction-permit-after-south-baltimore-residents-testimonies/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
  },
  {
   "id": "a6d87ff27c3772a3",
@@ -139,53 +115,5 @@
   ],
   "state": "US",
   "pitch": true
- },
- {
-  "id": "ac20aa1147170181",
-  "date": "2026-10-05",
-  "title": "7 moments you don’t want to miss from the BRESCO permit hearing",
-  "url": "https://www.sbclt.org/7-moments-you-dont-want-to-miss-from-the-bresco-permit-hearing/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
- },
- {
-  "id": "f93c95721cc2087e",
-  "date": "2026-10-01",
-  "title": "PRESS RELEASE: Community Role in Curtis Bay Energy Closure",
-  "url": "https://www.sbclt.org/press-release-community-role-in-curtis-bay-energy-closure/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
- },
- {
-  "id": "92a5d45946c5f3e5",
-  "date": "2026-10-01",
-  "title": "We closed one incinerator today. Can we close another?",
-  "url": "https://www.sbclt.org/we-closed-one-incinerator-today-can-we-close-another/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
- },
- {
-  "id": "4f23ac0172bdc05c",
-  "date": "2026-09-01",
-  "title": "October 1: BRESCO Incinerator Permit Hearing",
-  "url": "https://www.sbclt.org/october-1-bresco-incinerator-permit-hearing/",
-  "kind": null,
-  "source": "South Baltimore Community Land Trust",
-  "tags": [
-   "allied"
-  ],
-  "state": "MD"
  }
 ]
