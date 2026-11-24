@@ -40,19 +40,6 @@
   "pitch": true
  },
  {
-  "id": "fd6b4d048f16636d",
-  "date": "2026-11-20",
-  "title": "Court Delays Plan to Detonate Toxic Explosives in Iowa",
-  "url": "https://insideclimatenews.org/news/20112026/iowa-toxic-lead-explosives-detonation-delayed/",
-  "kind": null,
-  "source": "Inside Climate News",
-  "tags": [
-   "nj-local:Toxic"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
   "id": "d18a4c9268e1662d",
   "date": "2026-11-16",
   "title": "In Cape Cod’s Depleted Estuaries, Shellfish Help Reverse Pollution",
@@ -76,19 +63,6 @@
    "allied"
   ],
   "state": "MD"
- },
- {
-  "id": "029e1d904be4f65b",
-  "date": "2026-11-13",
-  "title": "The cozy radicalism of repair cafés",
-  "url": "https://grist.org/culture/cozy-radicalism-right-to-repair-cafes/",
-  "kind": null,
-  "source": "Grist",
-  "tags": [
-   "nj-local:warehouses"
-  ],
-  "state": "US",
-  "pitch": true
  },
  {
   "id": "8ad941c4d6aac0ba",
@@ -124,19 +98,6 @@
   "source": "Civil Eats",
   "tags": [
    "nj-local:Air Pollution"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "d1b6faaaa8f69930",
-  "date": "2026-11-04",
-  "title": "To Make Progress on Climate, Some Farmers Won’t Say ‘Climate’",
-  "url": "https://civileats.com/2026/11/04/to-make-progress-on-climate-some-farmers-wont-say-climate/",
-  "kind": null,
-  "source": "Civil Eats",
-  "tags": [
-   "nj-local:emissions"
   ],
   "state": "US",
   "pitch": true
