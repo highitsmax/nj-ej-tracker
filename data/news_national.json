@@ -1,5 +1,31 @@
 [
  {
+  "id": "9456316854669cca",
+  "date": "2026-11-25",
+  "title": "San Francisco Bay Area Braces for Record Coastal Flooding",
+  "url": "https://insideclimatenews.org/news/24112026/san-francisco-bay-area-coastal-flooding/",
+  "kind": null,
+  "source": "Inside Climate News",
+  "tags": [
+   "nj-local:flood risk"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
+  "id": "1999f0722b75b5e1",
+  "date": "2026-11-24",
+  "title": "USDA: 350 Midwest Farms Face Lead Fallout from Impending Toxic Explosion",
+  "url": "https://civileats.com/2026/11/24/usda-350-midwest-farms-face-lead-fallout-from-impending-toxic-explosion/",
+  "kind": null,
+  "source": "Civil Eats",
+  "tags": [
+   "nj-local:Toxic"
+  ],
+  "state": "US",
+  "pitch": true
+ },
+ {
   "id": "aa20f2ee6fb2c1e3",
   "date": "2026-11-23",
   "title": "Farm and Environmental Advocates Fight Congressional Permitting Bill",
@@ -22,19 +48,6 @@
   "source": "Grist",
   "tags": [
    "nj-local:power plant"
-  ],
-  "state": "US",
-  "pitch": true
- },
- {
-  "id": "e28c118bee91a413",
-  "date": "2026-11-21",
-  "title": "He Sacrificed Everything to Stop Industrial Water Pollution. Authorities in Texas Don’t Care.",
-  "url": "https://insideclimatenews.org/news/21112026/texas-wont-enforce-plastic-discharge-ban/",
-  "kind": null,
-  "source": "Inside Climate News",
-  "tags": [
-   "nj-local:Pollution"
   ],
   "state": "US",
   "pitch": true
@@ -88,19 +101,6 @@
    "allied"
   ],
   "state": "MD"
- },
- {
-  "id": "a6d87ff27c3772a3",
-  "date": "2026-11-05",
-  "title": "EPA Scraps Effort to Better Regulate Air Pollution from CAFOs",
-  "url": "https://civileats.com/2026/11/05/epa-scraps-effort-to-better-regulate-air-pollution-from-cafos/",
-  "kind": null,
-  "source": "Civil Eats",
-  "tags": [
-   "nj-local:Air Pollution"
-  ],
-  "state": "US",
-  "pitch": true
  },
  {
   "id": "ac20aa1147170181",
